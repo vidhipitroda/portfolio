@@ -9,7 +9,7 @@ import WatercolorBackground from './components/WatercolorBackground.jsx';
 
 export default function App() {
   return (
-    <div className="min-h-screen text-zinc-900 antialiased">
+    <div className="min-h-screen text-zinc-900 antialiased relative" style={{ zIndex: 1 }}>
       <WatercolorBackground />
       <Navbar />
       <main>
