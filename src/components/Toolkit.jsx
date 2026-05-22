@@ -14,7 +14,14 @@ function TickerRow({ items, direction = 'left' }) {
   const doubled = [...items, ...items];
   const cls = direction === 'left' ? 'ticker-left' : 'ticker-right';
   return (
-    <div className="relative flex overflow-hidden select-none py-2">
+    <div className="relative select-none py-2" style={{ overflow: 'hidden' }}>
+      {/* left fade */}
+      <div className="pointer-events-none absolute left-0 top-0 h-full w-24 z-10"
+        style={{ background: 'linear-gradient(to right, rgba(255,255,255,0.92), transparent)' }} />
+      {/* right fade */}
+      <div className="pointer-events-none absolute right-0 top-0 h-full w-24 z-10"
+        style={{ background: 'linear-gradient(to left, rgba(255,255,255,0.92), transparent)' }} />
+
       <div className={`flex gap-6 shrink-0 ${cls}`}>
         {doubled.map((item, i) => (
           <motion.div
