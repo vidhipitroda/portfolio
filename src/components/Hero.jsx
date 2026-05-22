@@ -53,9 +53,11 @@ export default function Hero() {
         {/* Avatar */}
         <div className="relative mb-8">
           <div className="absolute -inset-1.5 rounded-full bg-gradient-to-br from-indigo-400 via-purple-400 to-pink-400 opacity-60 blur-md" />
-          <div className="relative h-32 w-32 rounded-full bg-gradient-to-br from-indigo-100 to-purple-100 border-[3px] border-white shadow-xl flex items-center justify-center">
-            <span className="text-3xl font-black text-indigo-600 tracking-tight">VP</span>
-          </div>
+          <img
+            src="/hero.png"
+            alt="Vidhi Pitroda"
+            className="relative h-32 w-32 rounded-full object-cover border-[3px] border-white shadow-xl"
+          />
         </div>
 
         {/* Name */}

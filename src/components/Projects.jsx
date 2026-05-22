@@ -5,10 +5,10 @@ function ProjectCard({ project, index }) {
   return (
     <motion.div
       className="group rounded-2xl bg-white border border-zinc-200 shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300"
-      initial={{ opacity: 0, y: 40 }}
+      initial={{ opacity: 0, y: 60 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: '-60px' }}
-      transition={{ duration: 0.5, delay: index * 0.12, ease: 'easeOut' }}
+      viewport={{ once: false, amount: 0.15 }}
+      transition={{ duration: 0.6, delay: index * 0.12, ease: 'easeOut' }}
       whileHover={{ y: -6 }}
     >
       {/* Gradient header band */}

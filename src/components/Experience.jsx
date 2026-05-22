@@ -5,10 +5,10 @@ function TimelineEntry({ entry, index }) {
   return (
     <motion.div
       className="relative flex gap-8"
-      initial={{ opacity: 0, y: 40 }}
+      initial={{ opacity: 0, y: 60 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: '-60px' }}
-      transition={{ duration: 0.55, delay: index * 0.13, ease: 'easeOut' }}
+      viewport={{ once: false, amount: 0.15 }}
+      transition={{ duration: 0.6, delay: index * 0.13, ease: 'easeOut' }}
     >
       {/* Left accent line */}
       <div className="flex flex-col items-center">

@@ -9,10 +9,10 @@ export default function About() {
 
       <div className="max-w-5xl mx-auto">
         <motion.div
-          initial={{ opacity: 0, y: 40 }}
+          initial={{ opacity: 0, y: 60 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: '-80px' }}
-          transition={{ duration: 0.6, ease: 'easeOut' }}
+          viewport={{ once: false, amount: 0.2 }}
+          transition={{ duration: 0.7, ease: 'easeOut' }}
         >
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-zinc-400 mb-2">About</p>
           <h2 className="text-3xl md:text-4xl font-black tracking-tight text-zinc-900 mb-12">
@@ -24,10 +24,10 @@ export default function About() {
           {/* Text */}
           <motion.div
             className="space-y-5 text-[17px] text-zinc-600 leading-relaxed"
-            initial={{ opacity: 0, y: 40 }}
+          initial={{ opacity: 0, y: 60 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: '-60px' }}
-            transition={{ duration: 0.6, delay: 0.1, ease: 'easeOut' }}
+            viewport={{ once: false, amount: 0.2 }}
+            transition={{ duration: 0.7, delay: 0.1, ease: 'easeOut' }}
           >
             <p>
               Data &amp; AI Engineer with a passion for building end-to-end intelligent
@@ -52,10 +52,10 @@ export default function About() {
 
           {/* Skills card */}
           <motion.div
-            initial={{ opacity: 0, y: 40 }}
+            initial={{ opacity: 0, y: 60 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: '-60px' }}
-            transition={{ duration: 0.6, delay: 0.2, ease: 'easeOut' }}
+            viewport={{ once: false, amount: 0.2 }}
+            transition={{ duration: 0.7, delay: 0.2, ease: 'easeOut' }}
           >
             <div className="rounded-2xl bg-white border border-zinc-200 shadow-sm p-6">
               <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-zinc-400 mb-4">
