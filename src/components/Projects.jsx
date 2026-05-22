@@ -79,12 +79,12 @@ export default function Projects() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="mb-12"
+          className="mb-12 text-center"
         >
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-zinc-400 mb-2">Work</p>
-          <h2 className="text-5xl md:text-7xl tracking-wider uppercase"
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-zinc-400 mb-2">Projects</p>
+          <h2 className="text-4xl md:text-5xl tracking-wider uppercase"
             style={{ fontFamily: "'Bebas Neue', sans-serif", color: '#1b4b75' }}>
-            Projects I Have Built
+            What I've Built
           </h2>
         </motion.div>
 

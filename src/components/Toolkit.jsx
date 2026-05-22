@@ -57,7 +57,7 @@ export default function Toolkit() {
           viewport={{ once: true, margin: '-80px' }}
         >
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-zinc-400 mb-2">Technical Skills</p>
-          <h2 className="text-5xl md:text-7xl tracking-wider uppercase"
+          <h2 className="text-4xl md:text-5xl tracking-wider uppercase"
             style={{ fontFamily: "'Bebas Neue', sans-serif", color: '#1b4b75' }}>
             My Toolkit
           </h2>
