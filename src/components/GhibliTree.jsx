@@ -8,12 +8,18 @@ export default function GhibliTree() {
       <img
         src="/StockCake-Serene_Cherry_Blossoms-249691-small.jpg"
         alt=""
-        className="w-full h-full object-cover"
-        style={{ opacity: 0.55, filter: 'brightness(1.08) saturate(0.9)' }}
+        className="w-full h-full"
+        style={{
+          opacity: 0.5,
+          objectFit: 'cover',
+          objectPosition: 'center top',
+          filter: 'brightness(1.1) saturate(0.85) blur(2px)',
+          transform: 'scale(1.04)', // hide blur edges
+        }}
       />
-      {/* soft white vignette so edges don't look harsh */}
+      {/* soft white vignette */}
       <div className="absolute inset-0" style={{
-        background: 'radial-gradient(ellipse at center, transparent 30%, rgba(255,255,255,0.55) 100%)'
+        background: 'radial-gradient(ellipse at center, transparent 20%, rgba(255,255,255,0.5) 100%)'
       }} />
     </div>
   );

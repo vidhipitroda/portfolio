@@ -8,27 +8,32 @@ import Experience from './components/Experience.jsx';
 import Contact from './components/Contact.jsx';
 import GhibliTree from './components/GhibliTree.jsx';
 import FallingPetals from './components/FallingPetals.jsx';
+import WatercolorBackground from './components/WatercolorBackground.jsx';
 
 export default function App() {
   return (
     <div className="min-h-screen text-zinc-900 antialiased relative">
-      {/* Full-page cherry blossom background */}
+      {/* Cherry blossom photo background */}
       <GhibliTree />
+      {/* Watercolor paint strokes on top of photo */}
+      <WatercolorBackground />
       {/* Animated falling petals */}
       <FallingPetals />
 
       <SideNav />
 
-      {/* Curved floating page card */}
-      <div className="relative mx-auto min-h-screen"
+      {/* Floating page card — wide, centred, frosted */}
+      <div
+        className="relative mx-auto min-h-screen"
         style={{
-          maxWidth: '900px',
-          background: 'rgba(255,255,255,0.88)',
-          backdropFilter: 'blur(18px)',
-          WebkitBackdropFilter: 'blur(18px)',
+          maxWidth: '1100px',
+          background: 'rgba(255,255,255,0.82)',
+          backdropFilter: 'blur(20px)',
+          WebkitBackdropFilter: 'blur(20px)',
           borderRadius: '0 0 2.5rem 2.5rem',
-          boxShadow: '0 8px 60px rgba(0,0,0,0.13), 0 1.5px 0 rgba(255,255,255,0.7) inset',
+          boxShadow: '0 8px 60px rgba(0,0,0,0.12), 0 1.5px 0 rgba(255,255,255,0.7) inset',
           zIndex: 1,
+          overflow: 'visible',
         }}
       >
         <Navbar />
@@ -47,3 +52,4 @@ export default function App() {
     </div>
   );
 }
+
