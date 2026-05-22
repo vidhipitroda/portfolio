@@ -14,26 +14,27 @@ function TickerRow({ items, direction = 'left' }) {
   const doubled = [...items, ...items];
   const cls = direction === 'left' ? 'ticker-left' : 'ticker-right';
   return (
-    <div className="relative select-none py-2" style={{ overflow: 'hidden' }}>
-      {/* left fade */}
-      <div className="pointer-events-none absolute left-0 top-0 h-full w-24 z-10"
-        style={{ background: 'linear-gradient(to right, rgba(255,255,255,0.92), transparent)' }} />
-      {/* right fade */}
-      <div className="pointer-events-none absolute right-0 top-0 h-full w-24 z-10"
-        style={{ background: 'linear-gradient(to left, rgba(255,255,255,0.92), transparent)' }} />
+    <div className="relative select-none py-2 mx-6 rounded-2xl border border-zinc-200/70 bg-white/40"
+      style={{ overflow: 'hidden' }}>
+      {/* left fade — wider, earlier */}
+      <div className="pointer-events-none absolute left-0 top-0 h-full w-36 z-10"
+        style={{ background: 'linear-gradient(to right, rgba(255,255,255,1) 10%, rgba(255,255,255,0.7) 60%, transparent)' }} />
+      {/* right fade — wider, earlier */}
+      <div className="pointer-events-none absolute right-0 top-0 h-full w-36 z-10"
+        style={{ background: 'linear-gradient(to left, rgba(255,255,255,1) 10%, rgba(255,255,255,0.7) 60%, transparent)' }} />
 
-      <div className={`flex gap-6 shrink-0 ${cls}`}>
+      <div className={`flex gap-6 shrink-0 px-4 ${cls}`}>
         {doubled.map((item, i) => (
           <motion.div
             key={i}
             whileHover={{ scale: 1.12, y: -5 }}
             transition={{ type: 'spring', stiffness: 300, damping: 20 }}
-            className="flex flex-col items-center gap-2 shrink-0 px-5 py-3 rounded-xl bg-white border border-zinc-200 shadow-sm w-20 cursor-pointer"
+            className="flex flex-col items-center gap-2 shrink-0 px-5 py-4 rounded-xl bg-white border border-zinc-200 shadow-sm w-24 cursor-pointer"
           >
             <img
               src={`https://skillicons.dev/icons?i=${item.icon}`}
               alt={item.name}
-              className="w-8 h-8"
+              className="w-11 h-11"
             />
             <span className="text-[11px] font-medium text-zinc-600 text-center leading-tight">{item.name}</span>
           </motion.div>
