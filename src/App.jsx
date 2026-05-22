@@ -7,12 +7,15 @@ import Projects from './components/Projects.jsx';
 import Experience from './components/Experience.jsx';
 import Contact from './components/Contact.jsx';
 import GhibliTree from './components/GhibliTree.jsx';
+import FallingPetals from './components/FallingPetals.jsx';
 
 export default function App() {
   return (
     <div className="min-h-screen text-zinc-900 antialiased relative">
       {/* Full-page cherry blossom background */}
       <GhibliTree />
+      {/* Animated falling petals */}
+      <FallingPetals />
 
       <SideNav />
 
