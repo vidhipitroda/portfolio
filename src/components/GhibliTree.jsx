@@ -1,144 +1,154 @@
-// Decorative Ghibli-style cherry blossom tree — fixed to the left side of the page
+// Decorative pink cherry blossom tree — fixed to the left side of the page
 export default function GhibliTree() {
   return (
     <div
       className="fixed bottom-0 left-0 pointer-events-none select-none"
-      style={{ zIndex: 0, opacity: 0.65 }}
+      style={{ zIndex: 0, opacity: 0.6 }}
     >
       <svg
-        viewBox="0 0 280 560"
-        width="280"
-        height="560"
+        viewBox="0 0 300 580"
+        width="300"
+        height="580"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
         {/* ── Roots ── */}
-        <path d="M125 552 Q110 532 94 520 Q82 511 72 518" stroke="#5C3A1E" strokeWidth="6" strokeLinecap="round" fill="none"/>
-        <path d="M125 552 Q118 536 106 528 Q93 521 86 528" stroke="#5C3A1E" strokeWidth="4.5" strokeLinecap="round" fill="none"/>
-        <path d="M138 552 Q148 533 160 522 Q171 513 178 520" stroke="#5C3A1E" strokeWidth="6" strokeLinecap="round" fill="none"/>
-        <path d="M138 552 Q144 538 153 531 Q163 524 168 530" stroke="#5C3A1E" strokeWidth="4" strokeLinecap="round" fill="none"/>
+        <path d="M132 572 Q118 550 100 538 Q86 528 74 535" stroke="#6B3F1A" strokeWidth="7" strokeLinecap="round" fill="none"/>
+        <path d="M132 572 Q124 554 110 544 Q96 536 88 542" stroke="#6B3F1A" strokeWidth="5" strokeLinecap="round" fill="none"/>
+        <path d="M146 572 Q158 551 172 540 Q184 530 194 537" stroke="#6B3F1A" strokeWidth="7" strokeLinecap="round" fill="none"/>
+        <path d="M146 572 Q153 555 164 547 Q175 539 180 545" stroke="#6B3F1A" strokeWidth="4.5" strokeLinecap="round" fill="none"/>
 
         {/* ── Main trunk ── */}
-        <path
-          d="M122 552 Q114 500 118 438 Q122 375 114 312 Q108 265 114 218 Q118 185 112 155"
-          stroke="#4A2E10"
-          strokeWidth="24"
-          strokeLinecap="round"
-          fill="none"
-        />
-        {/* trunk texture highlight */}
-        <path
-          d="M128 552 Q120 500 124 438 Q128 375 120 312 Q114 265 120 218 Q124 185 118 155"
-          stroke="#7A4F28"
-          strokeWidth="9"
-          strokeLinecap="round"
-          fill="none"
-          opacity="0.45"
-        />
-        {/* dark groove */}
-        <path
-          d="M116 500 Q110 460 114 410"
-          stroke="#3A2008"
-          strokeWidth="4"
-          strokeLinecap="round"
-          fill="none"
-          opacity="0.4"
-        />
+        <path d="M136 572 Q128 515 132 448 Q136 378 128 308 Q122 255 128 205 Q132 168 126 135" stroke="#5C3010" strokeWidth="26" strokeLinecap="round" fill="none"/>
+        {/* trunk shading */}
+        <path d="M142 572 Q134 515 138 448 Q142 378 134 308 Q128 255 134 205 Q138 168 132 135" stroke="#8B5A2B" strokeWidth="10" strokeLinecap="round" fill="none" opacity="0.4"/>
 
-        {/* ── Branch right 1 (low) ── */}
-        <path d="M116 410 Q148 388 178 370 Q196 360 208 348" stroke="#4A2E10" strokeWidth="11" strokeLinecap="round" fill="none"/>
-        <path d="M208 348 Q224 338 234 324 Q240 316 248 310" stroke="#4A2E10" strokeWidth="7" strokeLinecap="round" fill="none"/>
-        <path d="M224 332 Q238 322 244 308" stroke="#4A2E10" strokeWidth="5" strokeLinecap="round" fill="none"/>
+        {/* ── Branch right low ── */}
+        <path d="M130 430 Q162 408 194 390 Q214 379 228 366" stroke="#5C3010" strokeWidth="12" strokeLinecap="round" fill="none"/>
+        <path d="M228 366 Q246 354 258 338 Q266 328 272 316" stroke="#5C3010" strokeWidth="8" strokeLinecap="round" fill="none"/>
+        <path d="M252 342 Q264 328 268 312" stroke="#5C3010" strokeWidth="5" strokeLinecap="round" fill="none"/>
 
-        {/* ── Branch left 1 (low) ── */}
-        <path d="M114 375 Q86 352 62 336 Q44 323 32 310" stroke="#4A2E10" strokeWidth="10" strokeLinecap="round" fill="none"/>
-        <path d="M32 310 Q18 298 12 284 Q6 274 8 264" stroke="#4A2E10" strokeWidth="6" strokeLinecap="round" fill="none"/>
+        {/* ── Branch left low ── */}
+        <path d="M128 395 Q98 372 70 355 Q50 342 36 328" stroke="#5C3010" strokeWidth="11" strokeLinecap="round" fill="none"/>
+        <path d="M36 328 Q20 314 12 298 Q6 286 8 274" stroke="#5C3010" strokeWidth="7" strokeLinecap="round" fill="none"/>
 
-        {/* ── Branch right 2 (mid) ── */}
-        <path d="M114 298 Q142 272 168 256 Q184 246 196 234" stroke="#4A2E10" strokeWidth="9" strokeLinecap="round" fill="none"/>
-        <path d="M196 234 Q212 222 220 208" stroke="#4A2E10" strokeWidth="5.5" strokeLinecap="round" fill="none"/>
+        {/* ── Branch right mid ── */}
+        <path d="M128 318 Q158 292 186 274 Q204 262 216 248" stroke="#5C3010" strokeWidth="10" strokeLinecap="round" fill="none"/>
+        <path d="M216 248 Q230 234 236 218" stroke="#5C3010" strokeWidth="6" strokeLinecap="round" fill="none"/>
 
-        {/* ── Branch left 2 (mid) ── */}
-        <path d="M112 270 Q88 248 66 234 Q50 224 40 210" stroke="#4A2E10" strokeWidth="8" strokeLinecap="round" fill="none"/>
-        <path d="M40 210 Q26 198 20 184" stroke="#4A2E10" strokeWidth="5" strokeLinecap="round" fill="none"/>
+        {/* ── Branch left mid ── */}
+        <path d="M126 288 Q100 264 76 248 Q58 236 46 220" stroke="#5C3010" strokeWidth="9" strokeLinecap="round" fill="none"/>
+        <path d="M46 220 Q30 206 22 190" stroke="#5C3010" strokeWidth="5.5" strokeLinecap="round" fill="none"/>
 
-        {/* ── Branch right 3 (high) ── */}
-        <path d="M112 190 Q136 168 158 152 Q172 142 182 128" stroke="#4A2E10" strokeWidth="7" strokeLinecap="round" fill="none"/>
+        {/* ── Branch right high ── */}
+        <path d="M126 208 Q152 182 176 164 Q192 152 204 136" stroke="#5C3010" strokeWidth="8" strokeLinecap="round" fill="none"/>
 
-        {/* ── Branch left 3 (high) ── */}
-        <path d="M112 178 Q90 158 70 144 Q54 134 44 118" stroke="#4A2E10" strokeWidth="6.5" strokeLinecap="round" fill="none"/>
+        {/* ── Branch left high ── */}
+        <path d="M126 192 Q102 168 80 152 Q62 140 50 122" stroke="#5C3010" strokeWidth="7.5" strokeLinecap="round" fill="none"/>
 
-        {/* ══ BLOSSOM CLUSTERS — back layer (deeper pink) ══ */}
-        <ellipse cx="250" cy="300" rx="34" ry="28" fill="#e8a0b8" opacity="0.6"/>
-        <ellipse cx="10"  cy="264" rx="30" ry="25" fill="#e8a0b8" opacity="0.6"/>
-        <ellipse cx="222" cy="200" rx="36" ry="30" fill="#e8a0b8" opacity="0.6"/>
-        <ellipse cx="18"  cy="178" rx="32" ry="27" fill="#e8a0b8" opacity="0.6"/>
-        <ellipse cx="110" cy="148" rx="50" ry="42" fill="#e8a0b8" opacity="0.65"/>
+        {/* ── Small top twigs ── */}
+        <path d="M126 148 Q138 128 148 110" stroke="#5C3010" strokeWidth="5" strokeLinecap="round" fill="none"/>
+        <path d="M126 148 Q114 126 106 108" stroke="#5C3010" strokeWidth="5" strokeLinecap="round" fill="none"/>
+        <path d="M148 110 Q158 96 162 80" stroke="#5C3010" strokeWidth="3.5" strokeLinecap="round" fill="none"/>
+        <path d="M106 108 Q96 94 90 78" stroke="#5C3010" strokeWidth="3.5" strokeLinecap="round" fill="none"/>
 
-        {/* ══ BLOSSOM CLUSTERS — mid layer ══ */}
-        <ellipse cx="242" cy="310" rx="40" ry="33" fill="#f2b8ce"/>
-        <ellipse cx="262" cy="296" rx="28" ry="24" fill="#f5c4d8"/>
-        <ellipse cx="8"   cy="272" rx="36" ry="30" fill="#f2b8ce"/>
-        <ellipse cx="218" cy="208" rx="42" ry="35" fill="#f2b8ce"/>
-        <ellipse cx="238" cy="192" rx="28" ry="24" fill="#f5c4d8"/>
-        <ellipse cx="16"  cy="186" rx="38" ry="32" fill="#f2b8ce"/>
-        <ellipse cx="110" cy="155" rx="56" ry="46" fill="#f2b8ce"/>
-        <ellipse cx="86"  cy="145" rx="36" ry="30" fill="#f5c4d8"/>
-        <ellipse cx="134" cy="142" rx="32" ry="28" fill="#f5c4d8"/>
+        {/* ══ BLOSSOM CLUSTERS ══ */}
+        {/* — right low branch end — */}
+        <ellipse cx="268" cy="310" rx="30" ry="24" fill="#f4a7bf" opacity="0.5"/>
+        <ellipse cx="272" cy="308" rx="26" ry="21" fill="#f8bfcf"/>
+        <ellipse cx="258" cy="318" rx="28" ry="22" fill="#fbd0de"/>
+        <ellipse cx="274" cy="298" rx="20" ry="16" fill="#fde4ed"/>
 
-        {/* ══ BLOSSOM CLUSTERS — front layer (lightest pink / white-pink) ══ */}
-        <ellipse cx="246" cy="302" rx="32" ry="26" fill="#fce4ee"/>
-        <ellipse cx="12"  cy="266" rx="28" ry="23" fill="#fce4ee"/>
-        <ellipse cx="226" cy="200" rx="34" ry="27" fill="#fce4ee"/>
-        <ellipse cx="20"  cy="180" rx="30" ry="25" fill="#fce4ee"/>
-        <ellipse cx="108" cy="148" rx="48" ry="40" fill="#fce4ee"/>
-        <ellipse cx="90"  cy="136" rx="32" ry="28" fill="#fff0f5"/>
-        <ellipse cx="128" cy="132" rx="30" ry="26" fill="#fff0f5"/>
-        <ellipse cx="108" cy="118" rx="40" ry="34" fill="#fff0f5"/>
+        {/* — left low branch end — */}
+        <ellipse cx="8"   cy="272" rx="28" ry="23" fill="#f4a7bf" opacity="0.5"/>
+        <ellipse cx="10"  cy="270" rx="24" ry="20" fill="#f8bfcf"/>
+        <ellipse cx="22"  cy="280" rx="26" ry="21" fill="#fbd0de"/>
+        <ellipse cx="8"   cy="260" rx="18" ry="15" fill="#fde4ed"/>
 
-        {/* ══ Individual blossoms (5-petal flowers) ══ */}
-        {/* helper: small 5-petal flower using circles */}
+        {/* — right mid branch end — */}
+        <ellipse cx="234" cy="212" rx="34" ry="27" fill="#f4a7bf" opacity="0.5"/>
+        <ellipse cx="238" cy="210" rx="30" ry="24" fill="#f8bfcf"/>
+        <ellipse cx="222" cy="220" rx="32" ry="26" fill="#fbd0de"/>
+        <ellipse cx="240" cy="198" rx="22" ry="18" fill="#fde4ed"/>
+
+        {/* — left mid branch end — */}
+        <ellipse cx="20"  cy="184" rx="32" ry="26" fill="#f4a7bf" opacity="0.5"/>
+        <ellipse cx="18"  cy="182" rx="28" ry="22" fill="#f8bfcf"/>
+        <ellipse cx="34"  cy="192" rx="30" ry="24" fill="#fbd0de"/>
+        <ellipse cx="16"  cy="172" rx="20" ry="17" fill="#fde4ed"/>
+
+        {/* — right high branch end — */}
+        <ellipse cx="202" cy="128" rx="36" ry="29" fill="#f4a7bf" opacity="0.5"/>
+        <ellipse cx="206" cy="126" rx="32" ry="25" fill="#f8bfcf"/>
+        <ellipse cx="190" cy="138" rx="34" ry="27" fill="#fbd0de"/>
+        <ellipse cx="208" cy="114" rx="24" ry="20" fill="#fde4ed"/>
+
+        {/* — left high branch end — */}
+        <ellipse cx="48"  cy="116" rx="34" ry="27" fill="#f4a7bf" opacity="0.5"/>
+        <ellipse cx="44"  cy="114" rx="30" ry="24" fill="#f8bfcf"/>
+        <ellipse cx="60"  cy="126" rx="32" ry="25" fill="#fbd0de"/>
+        <ellipse cx="40"  cy="104" rx="22" ry="18" fill="#fde4ed"/>
+
+        {/* — top twig ends — */}
+        <ellipse cx="164" cy="74"  rx="28" ry="22" fill="#f8bfcf"/>
+        <ellipse cx="166" cy="72"  rx="22" ry="18" fill="#fde4ed"/>
+        <ellipse cx="88"  cy="72"  rx="26" ry="21" fill="#f8bfcf"/>
+        <ellipse cx="86"  cy="70"  rx="20" ry="17" fill="#fde4ed"/>
+
+        {/* — main crown — */}
+        <ellipse cx="126" cy="152" rx="58" ry="48" fill="#f4a7bf" opacity="0.45"/>
+        <ellipse cx="126" cy="148" rx="62" ry="50" fill="#f8bfcf" opacity="0.8"/>
+        <ellipse cx="104" cy="138" rx="42" ry="34" fill="#fbd0de"/>
+        <ellipse cx="148" cy="135" rx="38" ry="31" fill="#fbd0de"/>
+        <ellipse cx="126" cy="122" rx="50" ry="40" fill="#fde4ed"/>
+        <ellipse cx="108" cy="112" rx="34" ry="28" fill="#fff0f5"/>
+        <ellipse cx="146" cy="108" rx="30" ry="25" fill="#fff0f5"/>
+        <ellipse cx="126" cy="96"  rx="38" ry="30" fill="#fff5f8"/>
+
+        {/* ══ Individual 5-petal blossoms ══ */}
         {[
-          [108, 106], [88, 118], [128, 114], [100, 128], [118, 124],
-          [246, 292], [260, 302], [14, 258], [220, 192], [232, 202],
-          [22, 172], [36, 182],
+          [126, 88], [108, 100], [146, 96], [118, 112], [136, 108],
+          [206, 116], [190, 128], [44, 104], [60, 116],
+          [238, 198], [222, 210], [18, 172], [34, 182],
+          [164, 62], [88, 62],
         ].map(([cx, cy], i) => (
           <g key={i}>
-            <circle cx={cx}      cy={cy - 6}  r="4.5" fill="#ffd6e7" opacity="0.9"/>
-            <circle cx={cx + 5.7} cy={cy - 1.9} r="4.5" fill="#ffd6e7" opacity="0.9"/>
-            <circle cx={cx + 3.5} cy={cy + 5}  r="4.5" fill="#ffd6e7" opacity="0.9"/>
-            <circle cx={cx - 3.5} cy={cy + 5}  r="4.5" fill="#ffd6e7" opacity="0.9"/>
-            <circle cx={cx - 5.7} cy={cy - 1.9} r="4.5" fill="#ffd6e7" opacity="0.9"/>
-            <circle cx={cx}      cy={cy}       r="3"   fill="#ffb8d0"/>
-            <circle cx={cx}      cy={cy}       r="1.2" fill="#fff0f5"/>
+            <circle cx={cx}       cy={cy - 5.5}  r="4"   fill="#ffc8da" opacity="0.95"/>
+            <circle cx={cx + 5.2} cy={cy - 1.8}  r="4"   fill="#ffc8da" opacity="0.95"/>
+            <circle cx={cx + 3.2} cy={cy + 4.7}  r="4"   fill="#ffc8da" opacity="0.95"/>
+            <circle cx={cx - 3.2} cy={cy + 4.7}  r="4"   fill="#ffc8da" opacity="0.95"/>
+            <circle cx={cx - 5.2} cy={cy - 1.8}  r="4"   fill="#ffc8da" opacity="0.95"/>
+            <circle cx={cx}       cy={cy}         r="2.5" fill="#f98ab0"/>
+            <circle cx={cx}       cy={cy}         r="1"   fill="#fff"/>
           </g>
         ))}
 
         {/* ══ Falling petals ══ */}
         {[
-          [210, 380, -25], [175, 420, 15], [240, 450, -40],
-          [60,  360, 20],  [30,  400, -15],[80,  440, 35],
-          [155, 460, -10], [120, 490, 20], [190, 500, -30],
-          [50,  490, 10],  [260, 420, 18], [20,  470, -20],
+          [230, 390, -28], [195, 432, 18], [258, 458, -42],
+          [65,  368, 22],  [34,  408, -18],[88,  448, 38],
+          [162, 468, -12], [128, 496, 24], [196, 508, -32],
+          [52,  496, 12],  [268, 428, 20], [22,  476, -22],
+          [142, 520, 16],  [220, 540, -14],[76,  530, 28],
         ].map(([cx, cy, rot], i) => (
           <ellipse
             key={i}
             cx={cx} cy={cy}
-            rx="5" ry="8"
-            fill="#f9c8dc"
-            opacity={0.35 + (i % 4) * 0.07}
+            rx="4.5" ry="7.5"
+            fill="#f8bfcf"
+            opacity={0.25 + (i % 5) * 0.07}
             transform={`rotate(${rot} ${cx} ${cy})`}
           />
         ))}
 
-        {/* ══ Sparkle dots ══ */}
-        <circle cx="102" cy="112" r="2.5" fill="#fff" opacity="0.8"/>
-        <circle cx="120" cy="108" r="2"   fill="#fff" opacity="0.75"/>
-        <circle cx="110" cy="124" r="2"   fill="#fff" opacity="0.7"/>
-        <circle cx="248" cy="294" r="2"   fill="#fff" opacity="0.65"/>
-        <circle cx="18"  cy="262" r="2"   fill="#fff" opacity="0.65"/>
-        <circle cx="224" cy="196" r="2"   fill="#fff" opacity="0.6"/>
+        {/* ══ Subtle petal glow highlights ══ */}
+        <circle cx="120" cy="92"  r="2" fill="#fff" opacity="0.7"/>
+        <circle cx="134" cy="88"  r="1.5" fill="#fff" opacity="0.65"/>
+        <circle cx="126" cy="104" r="1.8" fill="#fff" opacity="0.6"/>
+        <circle cx="204" cy="118" r="1.8" fill="#fff" opacity="0.55"/>
+        <circle cx="46"  cy="106" r="1.8" fill="#fff" opacity="0.55"/>
       </svg>
     </div>
   );
 }
+
