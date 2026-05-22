@@ -1,16 +1,20 @@
-// Cherry blossom tree — uses the real photo, fixed bottom-left
+// Full-page cherry blossom background scene
 export default function GhibliTree() {
   return (
     <div
-      className="fixed bottom-0 left-0 pointer-events-none select-none"
-      style={{ zIndex: 0, width: '340px', opacity: 0.82 }}
+      className="fixed inset-0 pointer-events-none select-none"
+      style={{ zIndex: -1 }}
     >
       <img
         src="/StockCake-Serene_Cherry_Blossoms-249691-small.jpg"
         alt=""
-        className="w-full h-auto object-contain object-bottom"
-        style={{ maskImage: 'linear-gradient(to top, black 60%, transparent 100%)', WebkitMaskImage: 'linear-gradient(to top, black 60%, transparent 100%)' }}
+        className="w-full h-full object-cover"
+        style={{ opacity: 0.55, filter: 'brightness(1.08) saturate(0.9)' }}
       />
+      {/* soft white vignette so edges don't look harsh */}
+      <div className="absolute inset-0" style={{
+        background: 'radial-gradient(ellipse at center, transparent 30%, rgba(255,255,255,0.55) 100%)'
+      }} />
     </div>
   );
 }
