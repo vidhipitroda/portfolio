@@ -22,16 +22,17 @@ export default function App() {
 
       <SideNav />
 
-      {/* Floating page card — wide, centred, frosted */}
+      {/* Floating page card — rounded rectangle, floats over background */}
       <div
-        className="relative mx-auto min-h-screen"
+        className="relative mx-auto"
         style={{
           maxWidth: '1100px',
-          background: 'rgba(255,255,255,0.82)',
+          margin: '2.5rem auto 2.5rem auto',
+          background: 'rgba(255,255,255,0.85)',
           backdropFilter: 'blur(20px)',
           WebkitBackdropFilter: 'blur(20px)',
-          borderRadius: '0 0 0.75rem 0.75rem',
-          boxShadow: '0 8px 60px rgba(0,0,0,0.12), 0 1.5px 0 rgba(255,255,255,0.7) inset',
+          borderRadius: '1.75rem',
+          boxShadow: '0 8px 60px rgba(0,0,0,0.14), 0 1.5px 0 rgba(255,255,255,0.7) inset',
           zIndex: 1,
           overflow: 'visible',
         }}
