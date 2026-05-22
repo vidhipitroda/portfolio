@@ -51,12 +51,12 @@ export default function Hero() {
         transition={{ duration: 0.8 }}
       >
         {/* Avatar */}
-        <div className="relative mb-8">
-          <div className="absolute -inset-1.5 rounded-full bg-gradient-to-br from-indigo-400 via-purple-400 to-pink-400 opacity-60 blur-md" />
+        <div className="relative mb-5">
+          <div className="absolute -inset-2 rounded-full bg-gradient-to-br from-indigo-400 via-purple-400 to-pink-400 opacity-50 blur-lg" />
           <img
             src="/profile.png"
             alt="Vidhi Pitroda"
-            className="relative h-32 w-32 rounded-full object-cover border-[3px] border-white shadow-xl"
+            className="relative h-44 w-44 rounded-full object-cover border-[3px] border-white shadow-2xl"
           />
         </div>
 
