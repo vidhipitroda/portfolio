@@ -10,14 +10,14 @@ function TickerRow({ items, direction = 'left' }) {
         {doubled.map((item, i) => (
           <div
             key={i}
-            className="flex items-center gap-2.5 shrink-0 px-4 py-2 rounded-xl bg-white border border-zinc-200 shadow-sm text-sm font-medium text-zinc-700"
+            className="flex flex-col items-center gap-2 shrink-0 px-5 py-3 rounded-xl bg-white border border-zinc-200 shadow-sm w-20"
           >
             <img
               src={`https://skillicons.dev/icons?i=${item.icon}`}
-              alt={item.label}
-              className="w-5 h-5"
+              alt={item.name}
+              className="w-8 h-8"
             />
-            <span>{item.label}</span>
+            <span className="text-[11px] font-medium text-zinc-600 text-center leading-tight">{item.name}</span>
           </div>
         ))}
       </div>
