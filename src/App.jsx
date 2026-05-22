@@ -30,7 +30,7 @@ export default function App() {
           background: 'rgba(255,255,255,0.82)',
           backdropFilter: 'blur(20px)',
           WebkitBackdropFilter: 'blur(20px)',
-          borderRadius: '0 0 2.5rem 2.5rem',
+          borderRadius: '0 0 0.75rem 0.75rem',
           boxShadow: '0 8px 60px rgba(0,0,0,0.12), 0 1.5px 0 rgba(255,255,255,0.7) inset',
           zIndex: 1,
           overflow: 'visible',
