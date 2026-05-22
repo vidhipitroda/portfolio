@@ -54,7 +54,7 @@ export default function Hero() {
         <div className="relative mb-8">
           <div className="absolute -inset-1.5 rounded-full bg-gradient-to-br from-indigo-400 via-purple-400 to-pink-400 opacity-60 blur-md" />
           <img
-            src="/hero.png"
+            src="/profile.png"
             alt="Vidhi Pitroda"
             className="relative h-32 w-32 rounded-full object-cover border-[3px] border-white shadow-xl"
           />
