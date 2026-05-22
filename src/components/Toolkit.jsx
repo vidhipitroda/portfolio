@@ -49,7 +49,7 @@ export default function Toolkit() {
     <section id="toolkit" className="relative py-24 scroll-mt-8">
       <div className="pointer-events-none absolute bottom-0 left-0 w-[45vw] h-[40vw] bg-sky-100/50 rounded-full blur-[100px] -z-10" />
 
-      <div className="max-w-5xl mx-auto px-6 mb-10">
+      <div className="max-w-5xl mx-auto px-6 mb-10 text-center">
         <motion.div
           variants={fadeUp}
           initial="hidden"
