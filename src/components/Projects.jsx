@@ -82,8 +82,9 @@ export default function Projects() {
           className="mb-12"
         >
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-zinc-400 mb-2">Work</p>
-          <h2 className="text-3xl md:text-4xl font-black tracking-tight text-zinc-900">
-            Selected Projects
+          <h2 className="text-5xl md:text-7xl tracking-wider uppercase"
+            style={{ fontFamily: "'Bebas Neue', sans-serif", color: '#1b4b75' }}>
+            Projects I Have Built
           </h2>
         </motion.div>
 
