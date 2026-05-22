@@ -1,5 +1,8 @@
 import { useEffect, useRef } from 'react';
 
+// Animated gradient mesh background
+// Backup of original watercolor version: WatercolorBackground.backup.jsx
+
 export default function WatercolorBackground() {
   const canvasRef = useRef(null);
 
@@ -7,6 +10,7 @@ export default function WatercolorBackground() {
     const canvas = canvasRef.current;
     const ctx = canvas.getContext('2d');
     let animFrame;
+    let t = 0;
 
     const resize = () => {
       canvas.width = window.innerWidth;
@@ -15,59 +19,41 @@ export default function WatercolorBackground() {
     resize();
     window.addEventListener('resize', resize);
 
-    // Dots
-    const dots = Array.from({ length: 80 }, () => ({
-      x: Math.random() * window.innerWidth,
-      y: Math.random() * window.innerHeight,
-      r: Math.random() * 2 + 0.5,
-      dx: (Math.random() - 0.5) * 0.3,
-      dy: (Math.random() - 0.5) * 0.3,
-      opacity: Math.random() * 0.5 + 0.2,
-    }));
-
-    // Blobs
+    // Mesh blobs — each drifts on a slow sin/cos path
     const blobs = [
-      { x: 0.15, y: 0.25, rx: 0.38, ry: 0.18, color: '#e8c4cc' },
-      { x: 0.55, y: 0.45, rx: 0.48, ry: 0.20, color: '#e8d0b0' },
-      { x: 0.82, y: 0.15, rx: 0.32, ry: 0.15, color: '#d4cce8' },
+      { baseX: 0.15, baseY: 0.20, r: 0.42, color: [139, 120, 210], speedX: 0.00031, speedY: 0.00019, phase: 0.0 },
+      { baseX: 0.75, baseY: 0.15, r: 0.38, color: [200, 110, 180], speedX: 0.00023, speedY: 0.00027, phase: 1.1 },
+      { baseX: 0.50, baseY: 0.60, r: 0.50, color: [100, 140, 230], speedX: 0.00017, speedY: 0.00033, phase: 2.2 },
+      { baseX: 0.85, baseY: 0.70, r: 0.36, color: [220, 130, 160], speedX: 0.00029, speedY: 0.00021, phase: 3.3 },
+      { baseX: 0.10, baseY: 0.75, r: 0.40, color: [120, 160, 220], speedX: 0.00025, speedY: 0.00015, phase: 4.4 },
     ];
-
-    const drawBlob = (x, y, rx, ry, color) => {
-      const grad = ctx.createRadialGradient(x, y, 0, x, y, Math.max(rx, ry));
-      grad.addColorStop(0, color + 'cc');
-      grad.addColorStop(0.5, color + '88');
-      grad.addColorStop(1, color + '00');
-      ctx.fillStyle = grad;
-      ctx.beginPath();
-      ctx.ellipse(x, y, rx, ry, 0, 0, Math.PI * 2);
-      ctx.fill();
-    };
 
     const draw = () => {
       const W = canvas.width;
       const H = canvas.height;
+      t += 1;
 
       ctx.clearRect(0, 0, W, H);
 
-      // Base background
-      ctx.fillStyle = '#f5f3f7';
+      // Base — very light warm white
+      ctx.fillStyle = '#f8f7fc';
       ctx.fillRect(0, 0, W, H);
 
-      // Blobs
-      blobs.forEach(b => drawBlob(b.x * W, b.y * H, b.rx * W, b.ry * H, b.color));
+      // Draw each floating blob
+      blobs.forEach(b => {
+        const x = (b.baseX + 0.12 * Math.sin(t * b.speedX * 1000 + b.phase)) * W;
+        const y = (b.baseY + 0.10 * Math.cos(t * b.speedY * 1000 + b.phase)) * H;
+        const radius = b.r * Math.max(W, H);
 
-      // Animated dots
-      dots.forEach(d => {
-        d.x += d.dx;
-        d.y += d.dy;
-        if (d.x < 0) d.x = W;
-        if (d.x > W) d.x = 0;
-        if (d.y < 0) d.y = H;
-        if (d.y > H) d.y = 0;
+        const grad = ctx.createRadialGradient(x, y, 0, x, y, radius);
+        const [r, g, bl] = b.color;
+        grad.addColorStop(0,   `rgba(${r},${g},${bl},0.28)`);
+        grad.addColorStop(0.4, `rgba(${r},${g},${bl},0.14)`);
+        grad.addColorStop(1,   `rgba(${r},${g},${bl},0)`);
 
+        ctx.fillStyle = grad;
         ctx.beginPath();
-        ctx.arc(d.x, d.y, d.r, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(155, 139, 180, ${d.opacity})`;
+        ctx.arc(x, y, radius, 0, Math.PI * 2);
         ctx.fill();
       });
 
