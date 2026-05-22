@@ -16,13 +16,13 @@ export default function WatercolorBackground() {
     window.addEventListener('resize', resize);
 
     // Dots
-    const dots = Array.from({ length: 80 }, () => ({
+    const dots = Array.from({ length: 180 }, () => ({
       x: Math.random() * window.innerWidth,
       y: Math.random() * window.innerHeight,
-      r: Math.random() * 2 + 0.5,
-      dx: (Math.random() - 0.5) * 0.3,
-      dy: (Math.random() - 0.5) * 0.3,
-      opacity: Math.random() * 0.5 + 0.2,
+      r: Math.random() * 4 + 1.5,
+      dx: (Math.random() - 0.5) * 0.4,
+      dy: (Math.random() - 0.5) * 0.4,
+      opacity: Math.random() * 0.6 + 0.3,
     }));
 
     // Blobs
