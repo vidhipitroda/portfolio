@@ -7,11 +7,13 @@ import Projects from './components/Projects.jsx';
 import Experience from './components/Experience.jsx';
 import Contact from './components/Contact.jsx';
 import WatercolorBackground from './components/WatercolorBackground.jsx';
+import GhibliTree from './components/GhibliTree.jsx';
 
 export default function App() {
   return (
     <div className="min-h-screen text-zinc-900 antialiased relative" style={{ zIndex: 1 }}>
       <WatercolorBackground />
+      <GhibliTree />
       <Navbar />
       <SideNav />
       <main>
