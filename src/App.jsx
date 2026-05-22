@@ -1,4 +1,5 @@
 import Navbar from './components/Navbar.jsx';
+import SideNav from './components/SideNav.jsx';
 import Hero from './components/Hero.jsx';
 import About from './components/About.jsx';
 import Toolkit from './components/Toolkit.jsx';
@@ -12,6 +13,7 @@ export default function App() {
     <div className="min-h-screen text-zinc-900 antialiased relative" style={{ zIndex: 1 }}>
       <WatercolorBackground />
       <Navbar />
+      <SideNav />
       <main>
         <Hero />
         <About />
