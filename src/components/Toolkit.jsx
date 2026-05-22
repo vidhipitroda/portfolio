@@ -14,7 +14,7 @@ function TickerRow({ items, direction = 'left' }) {
   const doubled = [...items, ...items];
   const cls = direction === 'left' ? 'ticker-left' : 'ticker-right';
   return (
-    <div className="relative select-none py-2 mx-6 rounded-2xl border border-zinc-200/70 bg-white/40"
+    <div className="relative select-none py-2 mx-6"
       style={{ overflow: 'hidden' }}>
       {/* left fade — wider, earlier */}
       <div className="pointer-events-none absolute left-0 top-0 h-full w-36 z-10"
