@@ -84,8 +84,11 @@ export const timeline = [
     period: 'Present',
     org: 'Current Role',
     role: 'Data & AI Engineer',
-    description:
-      'Building intelligent data products and AI-powered systems. Architecting pipelines, deploying models, and bridging data engineering with machine learning.',
+    bullets: [
+      'Architect end-to-end data pipelines and AI-powered products on Azure & Databricks',
+      'Deploy and monitor LLM-based applications using LangChain and FastAPI',
+      'Bridge data engineering and ML — from raw ingestion to model-in-production',
+    ],
     tags: ['Python', 'Databricks', 'Azure', 'LangChain', 'FastAPI'],
     accent: '#6366f1',
   },
@@ -93,8 +96,11 @@ export const timeline = [
     period: '2022 — 2024',
     org: 'Previous Role',
     role: 'Data Engineer',
-    description:
-      'Designed and maintained large-scale ETL pipelines, data models, and analytics infrastructure supporting business intelligence teams.',
+    bullets: [
+      'Designed and maintained large-scale ETL pipelines supporting BI teams',
+      'Built reusable data models in SQL and PySpark for cross-functional reporting',
+      'Orchestrated workflows with Apache Airflow, reducing pipeline failures by 40%',
+    ],
     tags: ['Python', 'SQL', 'PySpark', 'Airflow', 'Azure'],
     accent: '#0ea5e9',
   },
@@ -102,8 +108,11 @@ export const timeline = [
     period: 'Education',
     org: 'University',
     role: 'M.Sc., Data Science',
-    description:
-      'Postgraduate study in machine learning, statistical modelling, and big data technologies.',
+    bullets: [
+      'Specialised in machine learning, statistical modelling, and big data technologies',
+      'Completed dissertation on predictive modelling with real-world datasets',
+      'Graduated with Distinction',
+    ],
     tags: ['Machine Learning', 'Statistics', 'Research'],
     accent: '#10b981',
   },

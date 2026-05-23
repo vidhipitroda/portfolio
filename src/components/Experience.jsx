@@ -33,7 +33,14 @@ function TimelineEntry({ entry, index }) {
         <p className="text-xs font-semibold uppercase tracking-[0.15em] text-zinc-400 mb-1">{entry.period}</p>
         <h3 className="text-lg font-bold text-zinc-900 mb-0.5">{entry.role}</h3>
         <p className="text-sm font-semibold text-zinc-500 mb-3">{entry.org}</p>
-        <p className="text-sm text-zinc-600 leading-relaxed mb-4 max-w-md">{entry.description}</p>
+        <ul className="mb-4 flex flex-col gap-2">
+          {entry.bullets.map((b) => (
+            <li key={b} className="flex items-start gap-2 text-sm text-zinc-600 leading-relaxed max-w-md">
+              <span className="mt-1.5 w-1.5 h-1.5 rounded-full shrink-0" style={{ backgroundColor: entry.accent }} />
+              {b}
+            </li>
+          ))}
+        </ul>
         <div className="flex flex-wrap gap-2">
           {entry.tags.map((t) => (
             <span
@@ -89,21 +96,28 @@ export default function Experience() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: false, amount: 0.2 }}
               transition={{ duration: 0.6, ease: 'easeOut' }}
-              className="rounded-2xl p-6"
+              className="rounded-2xl overflow-hidden"
               style={{
-                background: 'rgba(255,255,255,0.6)',
-                border: '1px solid rgba(27,75,117,0.1)',
-                boxShadow: '0 4px 24px rgba(27,75,117,0.07)',
+                background: 'rgba(255,255,255,0.75)',
+                border: '1px solid rgba(27,75,117,0.12)',
+                boxShadow: '0 8px 32px rgba(27,75,117,0.10), 0 1px 0 rgba(255,255,255,0.8) inset',
               }}
             >
-              <p
-                className="text-xs font-semibold uppercase tracking-[0.18em] mb-5"
-                style={{ color: '#1b4b75', opacity: 0.6 }}
+              {/* Card header bar */}
+              <div
+                className="px-6 py-4"
+                style={{
+                  background: 'linear-gradient(135deg, #1b4b75 0%, #2d6fa3 100%)',
+                }}
               >
-                At a Glance
-              </p>
+                <p className="text-xs font-semibold uppercase tracking-[0.22em] text-white/70 mb-0.5">
+                  At a Glance
+                </p>
+                <p className="text-white text-sm font-medium opacity-90">Career highlights</p>
+              </div>
 
-              <div className="flex flex-col gap-5">
+              {/* Stats */}
+              <div className="px-6 py-5 flex flex-col gap-0">
                 {stats.map((s, i) => (
                   <motion.div
                     key={s.label}
@@ -112,29 +126,31 @@ export default function Experience() {
                     viewport={{ once: false, amount: 0.2 }}
                     transition={{ duration: 0.45, delay: i * 0.1, ease: 'easeOut' }}
                   >
-                    <p
-                      className="text-4xl font-black leading-none mb-1"
-                      style={{ fontFamily: "'Bebas Neue', sans-serif", color: '#1b4b75' }}
-                    >
-                      {s.value}
-                    </p>
-                    <p className="text-xs text-zinc-500 font-medium leading-snug">{s.label}</p>
+                    <div className="flex items-end gap-2 py-4">
+                      <p
+                        className="text-5xl leading-none"
+                        style={{ fontFamily: "'Bebas Neue', sans-serif", color: '#1b4b75' }}
+                      >
+                        {s.value}
+                      </p>
+                      <p className="text-xs text-zinc-500 font-medium leading-tight pb-1">{s.label}</p>
+                    </div>
                     {i < stats.length - 1 && (
-                      <div className="mt-4 h-px bg-zinc-100" />
+                      <div className="h-px" style={{ background: 'linear-gradient(90deg, rgba(27,75,117,0.12) 0%, transparent 100%)' }} />
                     )}
                   </motion.div>
                 ))}
               </div>
 
-              {/* Decorative dot grid */}
-              <div className="mt-6 grid grid-cols-5 gap-1.5 opacity-20">
-                {Array.from({ length: 25 }).map((_, i) => (
-                  <div
-                    key={i}
-                    className="w-1.5 h-1.5 rounded-full"
-                    style={{ backgroundColor: '#1b4b75' }}
-                  />
+              {/* Decorative footer strip */}
+              <div
+                className="px-6 py-3 flex items-center gap-1.5"
+                style={{ background: 'rgba(27,75,117,0.04)', borderTop: '1px solid rgba(27,75,117,0.08)' }}
+              >
+                {['#6366f1', '#0ea5e9', '#10b981'].map((c) => (
+                  <div key={c} className="w-2 h-2 rounded-full" style={{ backgroundColor: c }} />
                 ))}
+                <p className="text-xs text-zinc-400 ml-1">Data · AI · Engineering</p>
               </div>
             </motion.div>
           </div>
