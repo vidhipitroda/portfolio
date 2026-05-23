@@ -104,16 +104,31 @@ export const timeline = [
     tags: ['Python', 'SQL', 'PySpark', 'Airflow', 'Azure'],
     accent: '#0ea5e9',
   },
+];
+
+export const education = [
   {
-    period: 'Education',
-    org: 'University',
-    role: 'M.Sc., Data Science',
+    period: '2020 — 2022',
+    institution: 'University',
+    degree: 'M.Sc., Data Science',
     bullets: [
       'Specialised in machine learning, statistical modelling, and big data technologies',
       'Completed dissertation on predictive modelling with real-world datasets',
       'Graduated with Distinction',
     ],
-    tags: ['Machine Learning', 'Statistics', 'Research'],
+    tags: ['Machine Learning', 'Statistics', 'Research', 'Python'],
     accent: '#10b981',
+  },
+  {
+    period: '2017 — 2020',
+    institution: 'University',
+    degree: 'B.Sc., Computer Science',
+    bullets: [
+      'Core modules in algorithms, databases, software engineering, and maths',
+      'Final year project on data visualisation and interactive dashboards',
+      'First Class Honours',
+    ],
+    tags: ['Algorithms', 'Databases', 'Software Engineering'],
+    accent: '#f59e0b',
   },
 ];

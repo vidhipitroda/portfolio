@@ -5,6 +5,7 @@ import About from './components/About.jsx';
 import Toolkit from './components/Toolkit.jsx';
 import Projects from './components/Projects.jsx';
 import Experience from './components/Experience.jsx';
+import Education from './components/Education.jsx';
 import Contact from './components/Contact.jsx';
 import GhibliTree from './components/GhibliTree.jsx';
 import FallingPetals from './components/FallingPetals.jsx';
@@ -44,6 +45,7 @@ export default function App() {
           <Toolkit />
           <Projects />
           <Experience />
+          <Education />
           <Contact />
         </main>
         <footer className="py-8 px-6 text-center text-xs text-zinc-400 border-t border-zinc-100">
