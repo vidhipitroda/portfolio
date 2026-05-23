@@ -4,7 +4,7 @@ import { timeline } from '../data.js';
 const stats = [
   { value: '3+', label: 'Years in Data & AI' },
   { value: '10+', label: 'Projects Shipped' },
-  { value: '3', label: 'Roles & Orgs' },
+  { value: '5+', label: 'Cloud & MLOps Tools' },
   { value: '15+', label: 'Technologies Used' },
 ];
 
