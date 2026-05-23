@@ -15,7 +15,8 @@ export default function About() {
           transition={{ duration: 0.7, ease: 'easeOut' }}
         >
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-zinc-400 mb-2">About</p>
-          <h2 className="text-3xl md:text-4xl font-black tracking-tight text-zinc-900 mb-12">
+          <h2 className="text-4xl md:text-5xl tracking-wider uppercase mb-12"
+            style={{ fontFamily: "'Bebas Neue', sans-serif", color: '#1b4b75' }}>
             A Few Words
           </h2>
         </motion.div>
