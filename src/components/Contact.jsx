@@ -46,13 +46,16 @@ export default function Contact() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-zinc-400 mb-2">Say Hi</p>
-          <h2 className="text-3xl md:text-5xl font-black tracking-tight text-zinc-900 mb-5">
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-zinc-400 mb-2">Contact</p>
+          <h2
+            className="text-4xl md:text-5xl tracking-wider uppercase mb-5"
+            style={{ fontFamily: "'Bebas Neue', sans-serif", color: '#1b4b75' }}
+          >
             Let's Connect
           </h2>
           <p className="text-zinc-500 text-lg leading-relaxed mb-10">
-            Open to new roles, collaborations, and interesting data problems.
-            Reach out via any of the links below.
+            I'm always up for a collab — whether it's a new role, a data challenge,
+            or just a good conversation. Reach out via any of the links below.
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-3">
