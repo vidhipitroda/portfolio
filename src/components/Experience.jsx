@@ -1,13 +1,6 @@
 import { motion } from 'framer-motion';
 import { timeline } from '../data.js';
 
-const stats = [
-  { value: '3+', label: 'Years in Data & AI' },
-  { value: '10+', label: 'Projects Shipped' },
-  { value: '5+', label: 'Cloud & MLOps Tools' },
-  { value: '15+', label: 'Technologies Used' },
-];
-
 const certifications = [
   { name: 'Azure Data Engineer Associate', issuer: 'Microsoft', year: '2024' },
   { name: 'Azure AI Fundamentals', issuer: 'Microsoft', year: '2023' },
@@ -103,54 +96,6 @@ export default function Experience() {
 
           {/* RIGHT — Sticky panel stack */}
           <div className="lg:w-72 lg:sticky lg:top-24 shrink-0 flex flex-col gap-5">
-
-            {/* ── At a Glance ── */}
-            <motion.div
-              initial={{ opacity: 0, x: 40 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: false, amount: 0.2 }}
-              transition={{ duration: 0.6, ease: 'easeOut' }}
-              className="rounded-2xl overflow-hidden"
-              style={{
-                background: 'rgba(255,255,255,0.85)',
-                border: '1px solid rgba(180,100,60,0.15)',
-                boxShadow: '0 8px 40px rgba(180,100,60,0.10), 0 1px 0 rgba(255,255,255,0.9) inset',
-              }}
-            >
-              <div className="px-6 py-5" style={{ background: 'linear-gradient(135deg, #b85c38 0%, #d4845a 100%)' }}>
-                <p className="text-[10px] font-semibold uppercase tracking-[0.24em] text-white/60 mb-0.5">At a Glance</p>
-                <p className="text-white text-sm font-semibold">Career highlights</p>
-              </div>
-              <div className="px-6 py-4 flex flex-col">
-                {stats.map((s, i) => (
-                  <motion.div
-                    key={s.label}
-                    initial={{ opacity: 0, y: 16 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: false, amount: 0.2 }}
-                    transition={{ duration: 0.45, delay: i * 0.1, ease: 'easeOut' }}
-                  >
-                    <div className="flex items-center justify-between gap-4 py-4">
-                      <p className="text-xs font-semibold text-zinc-500 leading-snug max-w-[120px]">{s.label}</p>
-                      <p className="text-5xl leading-none shrink-0" style={{ fontFamily: "'Bebas Neue', sans-serif", color: '#b85c38' }}>
-                        {s.value}
-                      </p>
-                    </div>
-                    {i < stats.length - 1 && (
-                      <div className="h-px" style={{ background: 'linear-gradient(90deg, rgba(184,92,56,0.15) 0%, transparent 100%)' }} />
-                    )}
-                  </motion.div>
-                ))}
-              </div>
-              <div className="px-6 py-3 flex items-center gap-2" style={{ background: 'rgba(184,92,56,0.05)', borderTop: '1px solid rgba(184,92,56,0.10)' }}>
-                <div className="flex gap-1.5">
-                  {['#b85c38', '#d4a050', '#c47a5a'].map((c) => (
-                    <div key={c} className="w-2 h-2 rounded-full" style={{ backgroundColor: c }} />
-                  ))}
-                </div>
-                <p className="text-[10px] text-zinc-400 font-medium tracking-wide">Data · AI · Engineering</p>
-              </div>
-            </motion.div>
 
             {/* ── Certifications ── */}
             <motion.div
