@@ -98,59 +98,50 @@ export default function Experience() {
               transition={{ duration: 0.6, ease: 'easeOut' }}
               className="rounded-2xl overflow-hidden"
               style={{
-                background: 'rgba(255,255,255,0.75)',
+                background: 'rgba(255,255,255,0.8)',
                 border: '1px solid rgba(27,75,117,0.12)',
-                boxShadow: '0 8px 32px rgba(27,75,117,0.10), 0 1px 0 rgba(255,255,255,0.8) inset',
+                boxShadow: '0 8px 40px rgba(27,75,117,0.10), 0 1px 0 rgba(255,255,255,0.9) inset',
               }}
             >
-              {/* Card header bar */}
+              {/* Header */}
               <div
-                className="px-6 py-4"
-                style={{
-                  background: 'linear-gradient(135deg, #1b4b75 0%, #2d6fa3 100%)',
-                }}
+                className="px-5 py-4"
+                style={{ background: 'linear-gradient(135deg, #1b4b75 0%, #2d6fa3 100%)' }}
               >
-                <p className="text-xs font-semibold uppercase tracking-[0.22em] text-white/70 mb-0.5">
-                  At a Glance
-                </p>
-                <p className="text-white text-sm font-medium opacity-90">Career highlights</p>
+                <p className="text-[10px] font-semibold uppercase tracking-[0.24em] text-white/60 mb-0.5">At a Glance</p>
+                <p className="text-white text-sm font-semibold">Career highlights</p>
               </div>
 
-              {/* Stats */}
-              <div className="px-6 py-5 flex flex-col gap-0">
+              {/* 2×2 stat grid */}
+              <div className="grid grid-cols-2 gap-px bg-zinc-100/80 border-b border-zinc-100">
                 {stats.map((s, i) => (
                   <motion.div
                     key={s.label}
-                    initial={{ opacity: 0, y: 16 }}
-                    whileInView={{ opacity: 1, y: 0 }}
+                    initial={{ opacity: 0, scale: 0.88 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
                     viewport={{ once: false, amount: 0.2 }}
-                    transition={{ duration: 0.45, delay: i * 0.1, ease: 'easeOut' }}
+                    transition={{ duration: 0.4, delay: i * 0.08, ease: 'easeOut' }}
+                    className="flex flex-col items-center justify-center text-center py-6 px-3 bg-white"
                   >
-                    <div className="flex items-end gap-2 py-4">
-                      <p
-                        className="text-5xl leading-none"
-                        style={{ fontFamily: "'Bebas Neue', sans-serif", color: '#1b4b75' }}
-                      >
-                        {s.value}
-                      </p>
-                      <p className="text-xs text-zinc-500 font-medium leading-tight pb-1">{s.label}</p>
-                    </div>
-                    {i < stats.length - 1 && (
-                      <div className="h-px" style={{ background: 'linear-gradient(90deg, rgba(27,75,117,0.12) 0%, transparent 100%)' }} />
-                    )}
+                    <p
+                      className="text-4xl leading-none mb-1.5"
+                      style={{ fontFamily: "'Bebas Neue', sans-serif", color: '#1b4b75' }}
+                    >
+                      {s.value}
+                    </p>
+                    <p className="text-[10px] font-semibold uppercase tracking-[0.1em] text-zinc-400 leading-snug">{s.label}</p>
                   </motion.div>
                 ))}
               </div>
 
-              {/* Decorative footer strip */}
-              <div
-                className="px-6 py-3 flex items-center gap-1.5"
-                style={{ background: 'rgba(27,75,117,0.04)', borderTop: '1px solid rgba(27,75,117,0.08)' }}
-              >
-                {['#6366f1', '#0ea5e9', '#10b981'].map((c) => (
-                  <div key={c} className="w-2 h-2 rounded-full" style={{ backgroundColor: c }} />
-                ))}
-                <p className="text-xs text-zinc-400 ml-1">Data · AI · Engineering</p>
+              {/* Footer strip */}
+              <div className="px-5 py-3 flex items-center gap-2 bg-white">
+                <div className="flex gap-1.5">
+                  {['#6366f1', '#0ea5e9', '#10b981'].map((c) => (
+                    <div key={c} className="w-2 h-2 rounded-full" style={{ backgroundColor: c }} />
+                  ))}
+                </div>
+                <p className="text-[10px] text-zinc-400 font-medium tracking-wide">Data · AI · Engineering</p>
               </div>
             </motion.div>
           </div>
