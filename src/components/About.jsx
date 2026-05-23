@@ -101,7 +101,7 @@ export default function About() {
             <p className="text-[10px] font-semibold uppercase tracking-[0.18em] mb-3" style={{ color: '#10b981' }}>Currently</p>
             <div className="flex flex-col gap-2">
               {[
-                { icon: '🟢', text: 'Open to new roles' },
+                { icon: '🟢', text: "Let's build something great together" },
                 { icon: '🔨', text: 'Building AI-powered data products' },
                 { icon: '📍', text: 'Based in the UK' },
               ].map((item) => (
