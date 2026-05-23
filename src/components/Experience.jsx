@@ -53,11 +53,12 @@ export default function Experience() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="mb-12"
+          className="mb-12 text-center"
         >
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-zinc-400 mb-2">Career</p>
-          <h2 className="text-3xl md:text-4xl font-black tracking-tight text-zinc-900">
-            Experience
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-zinc-400 mb-2">Experience</p>
+          <h2 className="text-4xl md:text-5xl tracking-wider uppercase"
+            style={{ fontFamily: "'Bebas Neue', sans-serif", color: '#1b4b75' }}>
+            Where I've Worked
           </h2>
         </motion.div>
 
