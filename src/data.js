@@ -114,7 +114,9 @@ export const education = [
     location: 'City, UK',
     grade: 'Distinction',
     modules: ['Machine Learning', 'Deep Learning', 'Big Data', 'Statistical Modelling'],
-    accent: '#10b981',
+    accent: '#c4705a',
+    bg: 'linear-gradient(135deg, #fdf3ef 0%, #fae8e0 100%)',
+    badgeBg: 'linear-gradient(160deg, #c4705a 0%, #d4896e 100%)',
   },
   {
     year: '2020',
@@ -123,6 +125,8 @@ export const education = [
     location: 'City, UK',
     grade: 'First Class Honours',
     modules: ['Algorithms', 'Databases', 'Software Engineering', 'Data Structures'],
-    accent: '#f59e0b',
+    accent: '#b8892a',
+    bg: 'linear-gradient(135deg, #fdf8ed 0%, #f9edcc 100%)',
+    badgeBg: 'linear-gradient(160deg, #b8892a 0%, #cfa040 100%)',
   },
 ];

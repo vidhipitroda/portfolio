@@ -10,15 +10,15 @@ function DiplomaCard({ entry, index }) {
       transition={{ duration: 0.55, delay: index * 0.15, ease: 'easeOut' }}
       className="relative flex items-stretch rounded-2xl overflow-hidden"
       style={{
-        background: 'rgba(255,255,255,0.7)',
-        border: '1px solid rgba(0,0,0,0.07)',
-        boxShadow: '0 4px 28px rgba(0,0,0,0.07)',
+        background: entry.bg,
+        border: `1px solid ${entry.accent}28`,
+        boxShadow: `0 4px 28px ${entry.accent}18`,
       }}
     >
       {/* Left badge column */}
       <div
         className="flex flex-col items-center justify-center px-6 py-8 shrink-0 w-24"
-        style={{ background: `linear-gradient(160deg, ${entry.accent}22 0%, ${entry.accent}0a 100%)`, borderRight: `2px solid ${entry.accent}30` }}
+        style={{ background: entry.badgeBg, borderRight: `1px solid ${entry.accent}22` }}
       >
         {/* Graduation cap icon */}
         <div
@@ -33,7 +33,7 @@ function DiplomaCard({ entry, index }) {
         {/* Year */}
         <p
           className="text-2xl leading-none text-center"
-          style={{ fontFamily: "'Bebas Neue', sans-serif", color: entry.accent }}
+          style={{ fontFamily: "'Bebas Neue', sans-serif", color: 'rgba(255,255,255,0.9)' }}
         >
           {entry.year}
         </p>
@@ -80,7 +80,7 @@ function DiplomaCard({ entry, index }) {
 export default function Education() {
   return (
     <section id="education" className="relative py-24 px-6 scroll-mt-8">
-      <div className="pointer-events-none absolute top-0 left-0 w-[30vw] h-[30vw] bg-amber-100/30 rounded-full blur-[90px] -z-10" />
+      <div className="pointer-events-none absolute top-0 left-0 w-[30vw] h-[30vw] bg-orange-100/40 rounded-full blur-[90px] -z-10" />
 
       <div className="max-w-5xl mx-auto">
         <motion.div
