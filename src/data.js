@@ -108,27 +108,21 @@ export const timeline = [
 
 export const education = [
   {
-    period: '2020 — 2022',
-    institution: 'University',
+    year: '2022',
     degree: 'M.Sc., Data Science',
-    bullets: [
-      'Specialised in machine learning, statistical modelling, and big data technologies',
-      'Completed dissertation on predictive modelling with real-world datasets',
-      'Graduated with Distinction',
-    ],
-    tags: ['Machine Learning', 'Statistics', 'Research', 'Python'],
+    institution: 'University',
+    location: 'City, UK',
+    grade: 'Distinction',
+    modules: ['Machine Learning', 'Deep Learning', 'Big Data', 'Statistical Modelling'],
     accent: '#10b981',
   },
   {
-    period: '2017 — 2020',
-    institution: 'University',
+    year: '2020',
     degree: 'B.Sc., Computer Science',
-    bullets: [
-      'Core modules in algorithms, databases, software engineering, and maths',
-      'Final year project on data visualisation and interactive dashboards',
-      'First Class Honours',
-    ],
-    tags: ['Algorithms', 'Databases', 'Software Engineering'],
+    institution: 'University',
+    location: 'City, UK',
+    grade: 'First Class Honours',
+    modules: ['Algorithms', 'Databases', 'Software Engineering', 'Data Structures'],
     accent: '#f59e0b',
   },
 ];
