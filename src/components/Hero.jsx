@@ -80,26 +80,6 @@ export default function Hero() {
           </span>
           <span className="text-indigo-500">✦</span>
         </div>
-
-        {/* Download CV */}
-        <motion.a
-          href="/resume.pdf"
-          download
-          className="mt-6 inline-flex items-center gap-2 px-6 py-2.5 rounded-full text-sm font-semibold text-white shadow-md transition-all duration-200"
-          style={{ background: 'linear-gradient(135deg, #1b4b75 0%, #2d6fa3 100%)' }}
-          whileHover={{ scale: 1.04, boxShadow: '0 6px 20px rgba(27,75,117,0.35)' }}
-          whileTap={{ scale: 0.97 }}
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.5 }}
-        >
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-            <polyline points="7 10 12 15 17 10" />
-            <line x1="12" y1="15" x2="12" y2="3" />
-          </svg>
-          Download CV
-        </motion.a>
       </motion.div>
 
       {/* Scroll cue */}

@@ -43,6 +43,16 @@ export default function Navbar() {
               </a>
             </li>
           ))}
+          <li>
+            <a
+              href="/resume.pdf"
+              download
+              className="ml-2 px-4 py-1.5 rounded-lg text-sm font-semibold text-white transition-all duration-150 hover:opacity-90"
+              style={{ background: 'linear-gradient(135deg, #1b4b75 0%, #2d6fa3 100%)' }}
+            >
+              Resume
+            </a>
+          </li>
         </ul>
 
         {/* Mobile hamburger */}
