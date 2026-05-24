@@ -81,28 +81,74 @@ export const projects = [
 
 export const timeline = [
   {
-    period: 'Present',
-    org: 'Current Role',
-    role: 'Data & AI Engineer',
+    period: 'Aug 2025 — Present',
+    org: 'Aletha',
+    role: 'Data Engineer, Consultant',
     bullets: [
-      'Architect end-to-end data pipelines and AI-powered products on Azure & Databricks',
-      'Deploy and monitor LLM-based applications using LangChain and FastAPI',
-      'Bridge data engineering and ML — from raw ingestion to model-in-production',
+      'Designing and building enterprise-scale data and AI infrastructure on Azure and Databricks for large financial institutions.',
+      'Deployed LLM-powered automation tools that eliminated significant volumes of manual review work across engineering workflows.',
+      'Architected high-throughput data enrichment platforms processing millions of records with automated CI/CD pipelines.',
+      'Modernising legacy banking workflows by migrating business logic into scalable cloud-native pipelines using LLM-assisted techniques.',
     ],
-    tags: ['Python', 'Databricks', 'Azure', 'LangChain', 'FastAPI'],
+    tags: ['Azure', 'Databricks', 'Python', 'LLMs', 'CI/CD'],
     accent: '#6366f1',
   },
   {
-    period: '2022 — 2024',
-    org: 'Previous Role',
-    role: 'Data Engineer',
+    period: 'Jan 2025 — Jul 2025',
+    org: 'Independent Consultant',
+    role: 'ML / Data Engineering Consultant',
     bullets: [
-      'Designed and maintained large-scale ETL pipelines supporting BI teams',
-      'Built reusable data models in SQL and PySpark for cross-functional reporting',
-      'Orchestrated workflows with Apache Airflow, reducing pipeline failures by 40%',
+      'Developed a computer vision prototype for automated quality assessment in agriculture, applying deep learning and low-data techniques.',
+      'Used LLM-assisted workflows to improve data labeling efficiency and accelerate model experimentation.',
     ],
-    tags: ['Python', 'SQL', 'PySpark', 'Airflow', 'Azure'],
+    tags: ['Computer Vision', 'PyTorch', 'LLMs', 'Python'],
+    accent: '#10b981',
+  },
+  {
+    period: 'Nov 2021 — Dec 2024',
+    org: 'IBM',
+    role: 'Data Scientist / Data Engineer',
+    bullets: [
+      'Built end-to-end ML pipelines — from data preprocessing and feature engineering through to model deployment — across multiple enterprise client engagements.',
+      'Developed NLP models for real-time conversation analysis and intent classification, improving virtual assistant performance measurably.',
+      'Led a large-scale data warehouse migration from on-prem to Azure, owning technical design and stakeholder communication within a fast-moving team.',
+      'Developed a production-grade document intelligence system using LLMs to extract structured data from unstructured enterprise documents.',
+    ],
+    tags: ['Python', 'PySpark', 'Databricks', 'Azure', 'NLP', 'ADF'],
     accent: '#0ea5e9',
+  },
+  {
+    period: 'Aug 2021 — Oct 2021',
+    org: 'QualiTEAS Inc.',
+    role: 'Machine Learning Engineer',
+    bullets: [
+      'Built and deployed a computer vision model for automated defect detection, significantly reducing manual inspection time.',
+      'Implemented CI/CD pipelines for ML deployment on Azure, improving reproducibility and deployment frequency.',
+    ],
+    tags: ['PyTorch', 'Azure', 'CI/CD', 'Computer Vision'],
+    accent: '#f59e0b',
+  },
+  {
+    period: 'Jan 2021 — Jun 2021',
+    org: 'McGill University',
+    role: 'Data Scientist (Intern)',
+    bullets: [
+      'Built web scraping pipelines to collect and structure bilingual community data from 70+ sources.',
+      'Applied topic modelling to surface key themes and built Power BI dashboards for stakeholder reporting.',
+    ],
+    tags: ['Python', 'NLP', 'Power BI', 'Web Scraping'],
+    accent: '#ec4899',
+  },
+  {
+    period: 'Sep 2019 — May 2021',
+    org: 'Lakehead University',
+    role: 'Researcher',
+    bullets: [
+      'Published research on explainable AI for medical image classification in IEEE 2021.',
+      'Applied statistical modelling and predictive analytics to large-scale datasets as part of graduate research.',
+    ],
+    tags: ['XAI', 'Deep Learning', 'Research', 'IEEE'],
+    accent: '#8b5cf6',
   },
 ];
 
