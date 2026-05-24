@@ -123,7 +123,7 @@ export const education = [
     degree: 'Bachelor\'s in Computer Engineering',
     institution: 'Gujarat Technological University',
     location: 'India',
-    grade: 'First Class Honours',
+    grade: 'Distinction',
     modules: ['Algorithms', 'Databases', 'Software Engineering', 'Data Structures'],
     accent: '#b8892a',
     bg: 'linear-gradient(135deg, #fdf8ed 0%, #f9edcc 100%)',
