@@ -32,16 +32,16 @@ export default function About() {
           >
             <div className="space-y-4 text-[16px] text-zinc-600 leading-relaxed">
               <p>
-                I'm Vidhi — based in Canada, originally from India. I work across data engineering, machine learning, and cloud, and have spent the last 4+ years doing so across a few different industries.
+                I work across data engineering, machine learning, and cloud. Four years across a few different industries.
               </p>
               <p>
-                I enjoy the early stage of a problem — when the shape of it isn't clear yet and you have to ask the right questions before writing a single line of code. I also genuinely enjoy the research part: reading papers, digging into how something actually works.
+                I enjoy the early stage of a problem, when the shape of it isn't clear yet and you have to ask the right questions before writing a single line of code. I also genuinely enjoy the research part: reading papers, digging into how something actually works.
               </p>
               <p>
-                I care about doing things well. Whether that's a pipeline, a model, or a conversation with a stakeholder — I try to find the right level of effort for what's actually needed, not over-engineer for the sake of it.
+                I care about doing things well. Whether that's a pipeline, a model, or a conversation with a stakeholder. I try to find the right level of effort for what's actually needed, not over-engineer for the sake of it.
               </p>
               <p>
-                Outside work I grow things in my garden, bake sourdough, cycle, run, play tennis, and read — enough to keep me away from screens and occasionally humble.
+                Outside work I grow things in my garden, bake sourdough, cycle, run, play tennis, and read. Enough to keep me away from screens and occasionally humble.
               </p>
             </div>
           </motion.div>
@@ -53,7 +53,7 @@ export default function About() {
           >
             <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-white/50">Experience</p>
             <div>
-              <p className="text-6xl leading-none" style={{ fontFamily: "'Bebas Neue', sans-serif", color: 'white' }}>3+</p>
+              <p className="text-6xl leading-none" style={{ fontFamily: "'Bebas Neue', sans-serif", color: 'white' }}>4+</p>
               <p className="text-xs text-white/70 mt-1 font-medium">Years in Data & AI</p>
             </div>
           </motion.div>
@@ -101,7 +101,7 @@ export default function About() {
               {[
                 { icon: '🟢', text: "Let's build something great together" },
                 { icon: '🔨', text: 'Building AI-powered data products' },
-                { icon: '📍', text: 'Based in the UK' },
+                { icon: '📍', text: 'Toronto, Ontario, Canada' },
               ].map((item) => (
                 <div key={item.text} className="flex items-center gap-2">
                   <span className="text-sm">{item.icon}</span>
