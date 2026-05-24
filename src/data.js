@@ -85,9 +85,9 @@ export const timeline = [
     org: 'Aletha',
     role: 'Data Engineer, Consultant',
     bullets: [
-      'Designing and building enterprise-scale data and AI infrastructure on Azure and Databricks for large financial institutions.',
-      'Deployed LLM-powered automation tools that eliminated significant volumes of manual review work across engineering workflows.',
-      'Architected high-throughput data enrichment platforms processing millions of records with automated CI/CD pipelines.',
+      'Building enterprise-scale data and AI infrastructure on Azure and Databricks for large financial institutions, handling terabyte-scale datasets across Canada and the U.S.',
+      'Deployed an LLM-powered automation tool that eliminated 100+ hours of manual review effort across engineering workflows.',
+      'Architected a geospatial enrichment platform processing 2M+ records via external APIs with end-to-end CI/CD automation.',
       'Modernising legacy banking workflows by migrating business logic into scalable cloud-native pipelines using LLM-assisted techniques.',
     ],
     tags: ['Azure', 'Databricks', 'Python', 'LLMs', 'CI/CD'],
@@ -99,7 +99,7 @@ export const timeline = [
     role: 'ML / Data Engineering Consultant',
     bullets: [
       'Developed a computer vision prototype for automated quality assessment in agriculture, applying deep learning and low-data techniques.',
-      'Used LLM-assisted workflows to improve data labeling efficiency and accelerate model experimentation.',
+      'Used LLM-assisted workflows to improve data labeling efficiency and accelerate model experimentation across constrained datasets.',
     ],
     tags: ['Computer Vision', 'PyTorch', 'LLMs', 'Python'],
     accent: '#10b981',
@@ -109,9 +109,9 @@ export const timeline = [
     org: 'IBM',
     role: 'Data Scientist / Data Engineer',
     bullets: [
-      'Built end-to-end ML pipelines — from data preprocessing and feature engineering through to model deployment — across multiple enterprise client engagements.',
-      'Developed NLP models for real-time conversation analysis and intent classification, improving virtual assistant performance measurably.',
-      'Led a large-scale data warehouse migration from on-prem to Azure, owning technical design and stakeholder communication within a fast-moving team.',
+      'Built end-to-end ML pipelines across multiple enterprise client engagements — from data preprocessing and feature engineering through to production deployment.',
+      'Developed NLP models for real-time conversation analysis, improving virtual assistant performance by 30%.',
+      'Led a large-scale data warehouse migration from on-prem to Azure, building 30+ ADF ETL pipelines and owning technical design and stakeholder communication.',
       'Developed a production-grade document intelligence system using LLMs to extract structured data from unstructured enterprise documents.',
     ],
     tags: ['Python', 'PySpark', 'Databricks', 'Azure', 'NLP', 'ADF'],
@@ -122,7 +122,7 @@ export const timeline = [
     org: 'QualiTEAS Inc.',
     role: 'Machine Learning Engineer',
     bullets: [
-      'Built and deployed a computer vision model for automated defect detection, significantly reducing manual inspection time.',
+      'Built and deployed a computer vision model for automated defect detection, reducing manual inspection time by 50%.',
       'Implemented CI/CD pipelines for ML deployment on Azure, improving reproducibility and deployment frequency.',
     ],
     tags: ['PyTorch', 'Azure', 'CI/CD', 'Computer Vision'],
