@@ -180,6 +180,47 @@ export default function Experience() {
               </div>
             </motion.div>
 
+            {/* ── Tech Stack ── */}
+            <motion.div
+              initial={{ opacity: 0, x: 40 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: false, amount: 0.2 }}
+              transition={{ duration: 0.6, delay: 0.3, ease: 'easeOut' }}
+              className="rounded-2xl overflow-hidden"
+              style={{
+                background: 'rgba(255,255,255,0.85)',
+                border: '1px solid rgba(27,75,117,0.10)',
+                boxShadow: '0 8px 40px rgba(27,75,117,0.06), 0 1px 0 rgba(255,255,255,0.9) inset',
+              }}
+            >
+              <div className="px-6 py-5" style={{ background: 'linear-gradient(135deg, #2d4a2d 0%, #3d6b3d 100%)' }}>
+                <p className="text-[10px] font-semibold uppercase tracking-[0.24em] text-white/60 mb-0.5">Tech Stack</p>
+                <p className="text-white text-sm font-semibold">Tools I work with</p>
+              </div>
+              <div className="px-5 py-4 flex flex-col gap-3">
+                {[
+                  { label: 'Data & Cloud', tags: ['Azure', 'Databricks', 'PySpark', 'ADF', 'Airflow'] },
+                  { label: 'ML & AI', tags: ['Python', 'TensorFlow', 'PyTorch', 'Scikit-learn', 'LLMs'] },
+                  { label: 'Engineering', tags: ['SQL', 'Docker', 'CI/CD', 'FastAPI', 'Git'] },
+                ].map((group) => (
+                  <div key={group.label}>
+                    <p className="text-[9px] font-bold uppercase tracking-[0.18em] text-zinc-400 mb-1.5">{group.label}</p>
+                    <div className="flex flex-wrap gap-1.5">
+                      {group.tags.map((t) => (
+                        <span
+                          key={t}
+                          className="text-[10px] px-2 py-0.5 rounded-full font-semibold"
+                          style={{ background: 'rgba(27,75,117,0.07)', color: '#1b4b75', border: '1px solid rgba(27,75,117,0.12)' }}
+                        >
+                          {t}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </motion.div>
+
           </div>
 
         </div>
