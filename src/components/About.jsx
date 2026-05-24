@@ -32,20 +32,18 @@ export default function About() {
           >
             <div className="space-y-4 text-[16px] text-zinc-600 leading-relaxed">
               <p>
-                Data &amp; AI Engineer with a passion for building end-to-end intelligent systems.
-                I specialise in transforming raw data into actionable insights — from ingestion
-                pipelines through to model deployment and production ML experiences.
+                I'm Vidhi — based in Canada, originally from India. I work across data engineering, machine learning, and cloud, and have spent the last 4+ years doing so across a few different industries.
               </p>
               <p>
-                My work blends engineering rigour with product thinking. If it involves{' '}
-                <span className="font-semibold text-zinc-800">Python, SQL, or Large Language Models</span>
-                , I'm in my element.
+                I enjoy the early stage of a problem — when the shape of it isn't clear yet and you have to ask the right questions before writing a single line of code. I also genuinely enjoy the research part: reading papers, digging into how something actually works.
+              </p>
+              <p>
+                I care about doing things well. Whether that's a pipeline, a model, or a conversation with a stakeholder — I try to find the right level of effort for what's actually needed, not over-engineer for the sake of it.
+              </p>
+              <p>
+                Outside work I grow things in my garden, bake sourdough, cycle, run, play tennis, and read — enough to keep me away from screens and occasionally humble.
               </p>
             </div>
-            <blockquote className="mt-6 border-l-4 pl-4 italic text-zinc-400 text-sm leading-relaxed"
-              style={{ borderColor: '#b85c38' }}>
-              "The goal is to turn data into information, and information into insight."
-            </blockquote>
           </motion.div>
 
           {/* Stat 1 — Years */}
