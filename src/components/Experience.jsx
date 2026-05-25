@@ -4,11 +4,11 @@ import { timeline } from '../data.js';
 const CREDLY_URL = 'https://www.credly.com/users/vidh-i-pitroda/badges#credly';
 
 const certifications = [
-  { name: 'Azure Data Engineer Associate', issuer: 'Microsoft', logo: 'https://cdn.simpleicons.org/microsoftazure/0078d4' },
-  { name: 'Azure AI Fundamentals', issuer: 'Microsoft', logo: 'https://cdn.simpleicons.org/microsoftazure/0078d4' },
-  { name: 'Snowflake Certified SnowPro Core', issuer: 'Snowflake', logo: 'https://cdn.simpleicons.org/snowflake/29b5e8' },
-  { name: 'Machine Learning Specialist Associate', issuer: 'IBM', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ibm/ibm-original.svg' },
-  { name: 'Banking Insights and Solutions (Bronze)', issuer: 'IBM', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ibm/ibm-original.svg' },
+  { name: 'Azure Data Engineer Associate', issuer: 'Microsoft', logo: '/microsoft-azure.svg' },
+  { name: 'Azure AI Fundamentals', issuer: 'Microsoft', logo: '/microsoft-azure.svg' },
+  { name: 'Snowflake Certified SnowPro Core', issuer: 'Snowflake', logo: '/snowflake.svg' },
+  { name: 'Machine Learning Specialist Associate', issuer: 'IBM', logo: '/ibm.svg' },
+  { name: 'Banking Insights and Solutions (Bronze)', issuer: 'IBM', logo: '/ibm.svg' },
 ];
 
 const achievements = [
