@@ -4,9 +4,9 @@ import { timeline } from '../data.js';
 const CREDLY_URL = 'https://www.credly.com/users/vidh-i-pitroda/badges#credly';
 
 const certifications = [
-  { name: 'Azure Data Engineer Associate', issuer: 'Microsoft', year: '2024' },
-  { name: 'Azure AI Fundamentals', issuer: 'Microsoft', year: '2023' },
-  { name: 'Databricks Certified Associate', issuer: 'Databricks', year: '2023' },
+  { name: 'Azure Data Engineer Associate', issuer: 'Microsoft' },
+  { name: 'Azure AI Fundamentals', issuer: 'Microsoft' },
+  { name: 'SnowPro Core', issuer: 'Snowflake' },
 ];
 
 const achievements = [
@@ -138,7 +138,7 @@ export default function Experience() {
                       </div>
                       <div className="flex-1 min-w-0">
                         <p className="text-xs font-bold text-zinc-800 leading-snug group-hover:text-[#1b4b75] transition-colors">{c.name}</p>
-                        <p className="text-[10px] text-zinc-400 mt-0.5">{c.issuer} · {c.year}</p>
+                        <p className="text-[10px] text-zinc-400 mt-0.5">{c.issuer}</p>
                       </div>
                       <svg className="mt-1 shrink-0 opacity-0 group-hover:opacity-100 transition-opacity" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#1b4b75" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                         <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/>
