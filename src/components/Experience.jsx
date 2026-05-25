@@ -4,11 +4,11 @@ import { timeline } from '../data.js';
 const CREDLY_URL = 'https://www.credly.com/users/vidh-i-pitroda/badges#credly';
 
 const certifications = [
-  { name: 'Azure Data Engineer Associate', issuer: 'Microsoft', logo: '/microsoft-azure.svg' },
-  { name: 'Azure AI Fundamentals', issuer: 'Microsoft', logo: '/microsoft-azure.svg' },
+  { name: 'Azure Data Engineer Associate', issuer: 'Microsoft', logo: '/Azure.png' },
+  { name: 'Azure AI Fundamentals', issuer: 'Microsoft', logo: '/Azure.png' },
   { name: 'Snowflake Certified SnowPro Core', issuer: 'Snowflake', logo: '/snowflake.svg' },
-  { name: 'Machine Learning Specialist Associate', issuer: 'IBM', logo: '/ibm.svg' },
-  { name: 'Banking Insights and Solutions (Bronze)', issuer: 'IBM', logo: '/ibm.svg' },
+  { name: 'Machine Learning Specialist Associate', issuer: 'IBM', logo: '/ibm.png' },
+  { name: 'Banking Insights and Solutions (Bronze)', issuer: 'IBM', logo: '/ibm.png' },
 ];
 
 const achievements = [
