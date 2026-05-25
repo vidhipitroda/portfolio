@@ -20,16 +20,8 @@ const achievements = [
     link: 'https://ieeexplore.ieee.org/abstract/document/9628573/',
   },
   {
-    icon: '📄',
-    title: 'Publication — Introduction to Blockchain and Cryptocurrency',
-    desc: 'Co-authored a technical overview of blockchain fundamentals and cryptocurrency mechanisms.',
-    tags: ['Authorea · Preprint · 2023'],
-    note: '* Preprint — not peer reviewed',
-    link: 'https://www.authorea.com/doi/full/10.36227/techrxiv.12100842',
-  },
-  {
     icon: '🏆',
-    title: 'Employee of the Year — IBM',
+    title: 'Performance Recognition Award — IBM',
     desc: 'Recognised across the organisation for consistent delivery and impact on high-stakes data & AI projects.',
     tags: ['Company-wide', 'IBM · 2023'],
   },
