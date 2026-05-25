@@ -7,6 +7,8 @@ const certifications = [
   { name: 'Azure Data Engineer Associate', issuer: 'Microsoft' },
   { name: 'Azure AI Fundamentals', issuer: 'Microsoft' },
   { name: 'SnowPro Core', issuer: 'Snowflake' },
+  { name: 'Machine Learning Specialist — Associate', issuer: 'IBM' },
+  { name: 'Banking Insights and Solutions (Bronze)', issuer: 'IBM' },
 ];
 
 const achievements = [
