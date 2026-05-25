@@ -12,11 +12,51 @@ const certifications = [
 ];
 
 const achievements = [
-  { icon: '📄', text: 'IEEE Publication — Explainable AI for Lung Disease Classification (Cited 37+)', link: 'https://ieeexplore.ieee.org/abstract/document/9628573/' },
-  { icon: '📄', text: 'Publication — Introduction to Blockchain and Cryptocurrency (Authorea, 2023)', link: 'https://www.authorea.com/doi/full/10.36227/techrxiv.12100842' },
-  { icon: '🏆', text: 'Employee of the Year — IBM 2023' },
-  { icon: '💼', text: 'Brought 1M+ in pipeline opportunities for the company' },
-  { icon: '🚀', text: 'Contributed to 3+ enterprise-scale AI product releases, including conversational AI deployments for major banking clients' },
+  {
+    icon: '📄',
+    title: 'IEEE Publication — Explainable AI for Lung Disease Classification',
+    desc: 'Peer-reviewed research on applying explainable AI techniques to medical imaging — cited 37+ times.',
+    tags: ['37+ Citations', 'IEEE · Peer Reviewed'],
+    link: 'https://ieeexplore.ieee.org/abstract/document/9628573/',
+  },
+  {
+    icon: '📄',
+    title: 'Publication — Introduction to Blockchain and Cryptocurrency',
+    desc: 'Co-authored a technical overview of blockchain fundamentals and cryptocurrency mechanisms.',
+    tags: ['Authorea · Preprint · 2023'],
+    note: '* Preprint — not peer reviewed',
+    link: 'https://www.authorea.com/doi/full/10.36227/techrxiv.12100842',
+  },
+  {
+    icon: '🏆',
+    title: 'Employee of the Year — IBM',
+    desc: 'Recognised across the organisation for consistent delivery and impact on high-stakes data & AI projects.',
+    tags: ['Company-wide', 'IBM · 2024'],
+  },
+  {
+    icon: '💼',
+    title: 'Generated $1M+ in client pipeline opportunities at IBM',
+    desc: 'Identified and progressed enterprise opportunities across data & AI engagements, contributing directly to business growth.',
+    tags: ['$1M+ Value', 'IBM'],
+  },
+  {
+    icon: '🚀',
+    title: 'Delivered AI products used by millions across Canada & the US',
+    desc: 'Contributed to 3+ enterprise-scale AI releases including conversational AI deployments live on the CIBC platform — serving customers across Canada and the United States.',
+    tags: ['Millions of users', 'CIBC · Banking', 'Production · Live'],
+  },
+  {
+    icon: '🎤',
+    title: 'Internal Tech Talks & Knowledge Sharing',
+    desc: 'Delivered internal talks on data & AI topics, translating complex concepts for cross-functional teams and driving knowledge across the organisation.',
+    tags: ['Technical Leadership', 'Knowledge Sharing'],
+  },
+  {
+    icon: '🌱',
+    title: 'Mentored 5+ Engineers',
+    desc: 'Supported junior and mid-level team members through technical guidance, career conversations, and hands-on project mentorship.',
+    tags: ['5+ People', 'Mentorship · Leadership'],
+  },
 ];
 
 function TimelineEntry({ entry, index }) {
@@ -174,25 +214,34 @@ export default function Experience() {
               <div className="px-6 py-4 flex flex-col gap-0">
                 {achievements.map((a, i) => (
                   <motion.div
-                    key={a.text}
+                    key={a.title}
                     initial={{ opacity: 0, y: 14 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: false, amount: 0.2 }}
-                    transition={{ duration: 0.4, delay: i * 0.09, ease: 'easeOut' }}
+                    transition={{ duration: 0.4, delay: i * 0.07, ease: 'easeOut' }}
                   >
                     {a.link ? (
-                      <a href={a.link} target="_blank" rel="noopener noreferrer"
-                        className="flex items-start gap-3 py-3.5 group cursor-pointer">
-                        <span className="text-lg leading-none shrink-0">{a.icon}</span>
-                        <p className="text-xs font-semibold text-zinc-700 leading-snug group-hover:text-[#a07830] transition-colors">{a.text}</p>
-                        <svg className="mt-0.5 shrink-0 opacity-0 group-hover:opacity-100 transition-opacity" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#a07830" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                          <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/>
-                        </svg>
+                      <a href={a.link} target="_blank" rel="noopener noreferrer" className="flex items-start gap-3 py-3.5 group cursor-pointer">
+                        <span className="text-base leading-none shrink-0 mt-0.5">{a.icon}</span>
+                        <div className="flex-1 min-w-0">
+                          <p className="text-xs font-bold text-zinc-800 leading-snug group-hover:text-[#a07830] transition-colors mb-1">{a.title}</p>
+                          <p className="text-[10px] text-zinc-500 leading-relaxed mb-1.5">{a.desc}</p>
+                          {a.note && <p className="text-[9px] text-zinc-400 italic mb-1.5">{a.note}</p>}
+                          <div className="flex flex-wrap gap-1">
+                            {a.tags.map(t => <span key={t} className="text-[9px] px-1.5 py-0.5 rounded-full font-semibold" style={{ background: 'rgba(160,120,48,0.1)', color: '#a07830' }}>{t}</span>)}
+                          </div>
+                        </div>
                       </a>
                     ) : (
                       <div className="flex items-start gap-3 py-3.5">
-                        <span className="text-lg leading-none shrink-0">{a.icon}</span>
-                        <p className="text-xs font-semibold text-zinc-700 leading-snug">{a.text}</p>
+                        <span className="text-base leading-none shrink-0 mt-0.5">{a.icon}</span>
+                        <div className="flex-1 min-w-0">
+                          <p className="text-xs font-bold text-zinc-800 leading-snug mb-1">{a.title}</p>
+                          <p className="text-[10px] text-zinc-500 leading-relaxed mb-1.5">{a.desc}</p>
+                          <div className="flex flex-wrap gap-1">
+                            {a.tags.map(t => <span key={t} className="text-[9px] px-1.5 py-0.5 rounded-full font-semibold" style={{ background: 'rgba(160,120,48,0.1)', color: '#a07830' }}>{t}</span>)}
+                          </div>
+                        </div>
                       </div>
                     )}
                     {i < achievements.length - 1 && (
