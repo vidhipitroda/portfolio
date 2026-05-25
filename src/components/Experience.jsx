@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion';
 import { timeline } from '../data.js';
 
+const CREDLY_URL = 'https://www.credly.com/users/vidh-i-pitroda/badges#credly';
+
 const certifications = [
   { name: 'Azure Data Engineer Associate', issuer: 'Microsoft', year: '2024' },
   { name: 'Azure AI Fundamentals', issuer: 'Microsoft', year: '2023' },
@@ -123,17 +125,25 @@ export default function Experience() {
                     viewport={{ once: false, amount: 0.2 }}
                     transition={{ duration: 0.4, delay: i * 0.09, ease: 'easeOut' }}
                   >
-                    <div className="flex items-start gap-3 py-3.5">
-                      <div className="mt-0.5 w-6 h-6 rounded-full flex items-center justify-center shrink-0" style={{ background: 'rgba(27,75,117,0.1)' }}>
+                    <a
+                      href={CREDLY_URL}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-start gap-3 py-3.5 group cursor-pointer"
+                    >
+                      <div className="mt-0.5 w-6 h-6 rounded-full flex items-center justify-center shrink-0 transition-colors group-hover:bg-[rgba(27,75,117,0.18)]" style={{ background: 'rgba(27,75,117,0.1)' }}>
                         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#1b4b75" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                           <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
                         </svg>
                       </div>
                       <div className="flex-1 min-w-0">
-                        <p className="text-xs font-bold text-zinc-800 leading-snug">{c.name}</p>
+                        <p className="text-xs font-bold text-zinc-800 leading-snug group-hover:text-[#1b4b75] transition-colors">{c.name}</p>
                         <p className="text-[10px] text-zinc-400 mt-0.5">{c.issuer} · {c.year}</p>
                       </div>
-                    </div>
+                      <svg className="mt-1 shrink-0 opacity-0 group-hover:opacity-100 transition-opacity" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#1b4b75" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/>
+                      </svg>
+                    </a>
                     {i < certifications.length - 1 && (
                       <div className="h-px" style={{ background: 'linear-gradient(90deg, rgba(27,75,117,0.10) 0%, transparent 100%)' }} />
                     )}
