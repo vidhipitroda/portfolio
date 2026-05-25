@@ -4,11 +4,11 @@ import { timeline } from '../data.js';
 const CREDLY_URL = 'https://www.credly.com/users/vidh-i-pitroda/badges#credly';
 
 const certifications = [
-  { name: 'Azure Data Engineer Associate', issuer: 'Issued by: Microsoft' },
-  { name: 'Azure AI Fundamentals', issuer: 'Issued by: Microsoft' },
-  { name: 'Snowflake Certified SnowPro Core', issuer: 'Issued by: Snowflake' },
-  { name: 'Machine Learning Specialist Associate', issuer: 'Issued by: IBM' },
-  { name: 'Banking Insights and Solutions (Bronze)', issuer: 'Issued by: IBM' },
+  { name: 'Azure Data Engineer Associate', issuer: 'Microsoft', logo: 'https://cdn.simpleicons.org/microsoft/00a4ef' },
+  { name: 'Azure AI Fundamentals', issuer: 'Microsoft', logo: 'https://cdn.simpleicons.org/microsoft/00a4ef' },
+  { name: 'Snowflake Certified SnowPro Core', issuer: 'Snowflake', logo: 'https://cdn.simpleicons.org/snowflake/29b5e8' },
+  { name: 'Machine Learning Specialist Associate', issuer: 'IBM', logo: 'https://cdn.simpleicons.org/ibm/1261fe' },
+  { name: 'Banking Insights and Solutions (Bronze)', issuer: 'IBM', logo: 'https://cdn.simpleicons.org/ibm/1261fe' },
 ];
 
 const achievements = [
@@ -133,10 +133,8 @@ export default function Experience() {
                       rel="noopener noreferrer"
                       className="flex items-start gap-3 py-3.5 group cursor-pointer"
                     >
-                      <div className="mt-0.5 w-6 h-6 rounded-full flex items-center justify-center shrink-0 transition-colors group-hover:bg-[rgba(27,75,117,0.18)]" style={{ background: 'rgba(27,75,117,0.1)' }}>
-                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#1b4b75" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                          <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                        </svg>
+                      <div className="mt-0.5 w-7 h-7 rounded-full flex items-center justify-center shrink-0 bg-white transition-shadow group-hover:shadow-md" style={{ border: '1px solid rgba(0,0,0,0.08)' }}>
+                        <img src={c.logo} alt={c.issuer} width="16" height="16" className="object-contain" />
                       </div>
                       <div className="flex-1 min-w-0">
                         <p className="text-xs font-bold text-zinc-800 leading-snug group-hover:text-[#1b4b75] transition-colors">{c.name}</p>
