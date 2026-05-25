@@ -12,9 +12,10 @@ const certifications = [
 ];
 
 const achievements = [
-  { icon: '🏆', text: 'Best Data Project — Internal Hackathon 2024' },
-  { icon: '🎓', text: 'M.Sc. Distinction — Top of cohort' },
-  { icon: '🚀', text: 'Shipped AI product used by 500+ users' },
+  { icon: '📄', text: 'IEEE Publication — Explainable AI for Lung Disease Classification (Cited 37+)', link: 'https://ieeexplore.ieee.org/abstract/document/9628573/' },
+  { icon: '📄', text: 'Publication — Introduction to Blockchain and Cryptocurrency (Authorea, 2023)', link: 'https://www.authorea.com/doi/full/10.36227/techrxiv.12100842' },
+  { icon: '🏆', text: 'Employee of the Year — IBM 2023' },
+  { icon: '�', text: 'Brought 1M+ in pipeline opportunities for the company' },
 ];
 
 function TimelineEntry({ entry, index }) {
@@ -178,10 +179,21 @@ export default function Experience() {
                     viewport={{ once: false, amount: 0.2 }}
                     transition={{ duration: 0.4, delay: i * 0.09, ease: 'easeOut' }}
                   >
-                    <div className="flex items-start gap-3 py-3.5">
-                      <span className="text-lg leading-none shrink-0">{a.icon}</span>
-                      <p className="text-xs font-semibold text-zinc-700 leading-snug">{a.text}</p>
-                    </div>
+                    {a.link ? (
+                      <a href={a.link} target="_blank" rel="noopener noreferrer"
+                        className="flex items-start gap-3 py-3.5 group cursor-pointer">
+                        <span className="text-lg leading-none shrink-0">{a.icon}</span>
+                        <p className="text-xs font-semibold text-zinc-700 leading-snug group-hover:text-[#a07830] transition-colors">{a.text}</p>
+                        <svg className="mt-0.5 shrink-0 opacity-0 group-hover:opacity-100 transition-opacity" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#a07830" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                          <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/>
+                        </svg>
+                      </a>
+                    ) : (
+                      <div className="flex items-start gap-3 py-3.5">
+                        <span className="text-lg leading-none shrink-0">{a.icon}</span>
+                        <p className="text-xs font-semibold text-zinc-700 leading-snug">{a.text}</p>
+                      </div>
+                    )}
                     {i < achievements.length - 1 && (
                       <div className="h-px" style={{ background: 'linear-gradient(90deg, rgba(160,120,48,0.12) 0%, transparent 100%)' }} />
                     )}
