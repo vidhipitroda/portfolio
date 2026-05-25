@@ -31,13 +31,13 @@ const achievements = [
     icon: '🏆',
     title: 'Employee of the Year — IBM',
     desc: 'Recognised across the organisation for consistent delivery and impact on high-stakes data & AI projects.',
-    tags: ['Company-wide', 'IBM · 2024'],
+    tags: ['Company-wide', 'IBM · 2023'],
   },
   {
     icon: '💼',
-    title: 'Generated $1M+ in client pipeline opportunities at IBM',
+    title: 'Generated $3M+ in client pipeline opportunities at IBM',
     desc: 'Identified and progressed enterprise opportunities across data & AI engagements, contributing directly to business growth.',
-    tags: ['$1M+ Value', 'IBM'],
+    tags: ['$3M+ Value', 'IBM'],
   },
   {
     icon: '🚀',
