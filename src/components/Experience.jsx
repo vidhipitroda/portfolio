@@ -15,7 +15,8 @@ const achievements = [
   { icon: '📄', text: 'IEEE Publication — Explainable AI for Lung Disease Classification (Cited 37+)', link: 'https://ieeexplore.ieee.org/abstract/document/9628573/' },
   { icon: '📄', text: 'Publication — Introduction to Blockchain and Cryptocurrency (Authorea, 2023)', link: 'https://www.authorea.com/doi/full/10.36227/techrxiv.12100842' },
   { icon: '🏆', text: 'Employee of the Year — IBM 2023' },
-  { icon: '�', text: 'Brought 1M+ in pipeline opportunities for the company' },
+  { icon: '💼', text: 'Brought 1M+ in pipeline opportunities for the company' },
+  { icon: '🚀', text: 'Contributed to 3+ enterprise-scale AI product releases, including conversational AI deployments for major banking clients' },
 ];
 
 function TimelineEntry({ entry, index }) {
