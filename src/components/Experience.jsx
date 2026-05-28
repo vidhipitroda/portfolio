@@ -1,5 +1,13 @@
 import { motion } from 'framer-motion';
-import { timeline, education } from '../data.js';
+import { timeline } from '../data.js';
+
+const funFacts = [
+  { emoji: '🚴‍♀️', fact: 'Cycles 60km — sometimes just for lunch.', tag: 'Commitment' },
+  { emoji: '🎾', fact: 'Left-handed tennis player.', tag: 'Your opponent\'s problem' },
+  { emoji: '⛵', fact: 'Learning to sail in 2026 — navigating cloud infrastructure wasn\'t challenging enough.', tag: 'In progress' },
+  { emoji: '🌻', fact: 'Attempting a 10ft sunflower — the vegetables are doing better.', tag: 'Updates pending' },
+  { emoji: '�', fact: 'The kitchen is basically a second IDE — recipes are just functions with tastier outputs.', tag: 'Side project' },
+];
 
 const CREDLY_URL = 'https://www.credly.com/users/vidh-i-pitroda/badges#credly';
 
@@ -252,7 +260,7 @@ export default function Experience() {
               </div>
             </motion.div>
 
-            {/* ── Education ── */}
+            {/* ── Fun Facts ── */}
             <motion.div
               initial={{ opacity: 0, x: 40 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -261,54 +269,34 @@ export default function Experience() {
               className="rounded-2xl overflow-hidden"
               style={{
                 background: 'rgba(255,255,255,0.85)',
-                border: '1px solid rgba(196,112,90,0.15)',
-                boxShadow: '0 8px 40px rgba(196,112,90,0.07), 0 1px 0 rgba(255,255,255,0.9) inset',
+                border: '1px solid rgba(100,80,160,0.15)',
+                boxShadow: '0 8px 40px rgba(100,80,160,0.07), 0 1px 0 rgba(255,255,255,0.9) inset',
               }}
             >
-              <div className="px-6 py-5" style={{ background: 'linear-gradient(135deg, #c4705a 0%, #d4896e 100%)' }}>
-                <p className="text-[10px] font-semibold uppercase tracking-[0.24em] text-white/60 mb-0.5">Education</p>
-                <p className="text-white text-sm font-semibold">Academic background</p>
+              <div className="px-6 py-5" style={{ background: 'linear-gradient(135deg, #6450a0 0%, #8060c0 100%)' }}>
+                <p className="text-[10px] font-semibold uppercase tracking-[0.24em] text-white/60 mb-0.5">Fun Facts</p>
+                <p className="text-white text-sm font-semibold">A bit about me</p>
               </div>
               <div className="px-6 py-4 flex flex-col gap-0">
-                {education.map((e, i) => (
+                {funFacts.map((f, i) => (
                   <motion.div
-                    key={e.degree}
+                    key={i}
                     initial={{ opacity: 0, y: 14 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: false, amount: 0.2 }}
-                    transition={{ duration: 0.4, delay: i * 0.1, ease: 'easeOut' }}
+                    transition={{ duration: 0.4, delay: i * 0.07, ease: 'easeOut' }}
                   >
-                    <div className="flex items-start gap-3 py-3.5">
-                      <div
-                        className="mt-0.5 w-7 h-7 rounded-full flex items-center justify-center shrink-0 text-white text-[10px] font-bold"
-                        style={{ background: e.badgeBg }}
-                      >
-                        {e.year.slice(2)}
-                      </div>
+                    <div className="flex items-start gap-3 py-3">
+                      <span className="text-base leading-none shrink-0 mt-0.5">{f.emoji}</span>
                       <div className="flex-1 min-w-0">
-                        <p className="text-xs font-bold text-zinc-800 leading-snug">{e.degree}</p>
-                        <p className="text-[10px] text-zinc-500 mt-0.5">{e.institution} · {e.location}</p>
-                        <div className="flex flex-wrap gap-1 mt-1.5">
-                          <span
-                            className="text-[9px] px-1.5 py-0.5 rounded-full font-semibold"
-                            style={{ background: 'rgba(196,112,90,0.10)', color: '#c4705a' }}
-                          >
-                            {e.grade}
-                          </span>
-                          {e.modules.slice(0, 2).map(m => (
-                            <span
-                              key={m}
-                              className="text-[9px] px-1.5 py-0.5 rounded-full font-semibold"
-                              style={{ background: 'rgba(196,112,90,0.07)', color: '#b05a48', border: '1px solid rgba(196,112,90,0.15)' }}
-                            >
-                              {m}
-                            </span>
-                          ))}
-                        </div>
+                        <p className="text-[11px] text-zinc-600 leading-relaxed">{f.fact}</p>
+                        {f.tag && (
+                          <span className="inline-block mt-1.5 text-[9px] px-1.5 py-0.5 rounded-full font-semibold" style={{ background: 'rgba(100,80,160,0.09)', color: '#6450a0', border: '1px solid rgba(100,80,160,0.15)' }}>{f.tag}</span>
+                        )}
                       </div>
                     </div>
-                    {i < education.length - 1 && (
-                      <div className="h-px" style={{ background: 'linear-gradient(90deg, rgba(196,112,90,0.12) 0%, transparent 100%)' }} />
+                    {i < funFacts.length - 1 && (
+                      <div className="h-px" style={{ background: 'linear-gradient(90deg, rgba(100,80,160,0.10) 0%, transparent 100%)' }} />
                     )}
                   </motion.div>
                 ))}
