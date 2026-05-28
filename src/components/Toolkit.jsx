@@ -32,7 +32,7 @@ function TickerRow({ items, direction = 'left' }) {
             className="flex flex-col items-center gap-2 shrink-0 px-5 py-4 rounded-xl bg-white border border-zinc-200 shadow-sm w-24 cursor-pointer"
           >
             <img
-              src={`https://skillicons.dev/icons?i=${item.icon}`}
+              src={item.iconUrl || `https://skillicons.dev/icons?i=${item.icon}`}
               alt={item.name}
               className="w-11 h-11"
             />
