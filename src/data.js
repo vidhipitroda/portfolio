@@ -83,6 +83,7 @@ export const timeline = [
   {
     period: 'Aug 2025 — Present',
     org: 'Aletha',
+    location: 'Toronto, ON',
     role: 'Data Engineer, Consultant',
     bullets: [
       'Building enterprise-scale data and AI infrastructure on Azure and Databricks for large financial institutions, handling terabyte-scale datasets across Canada and the U.S.',
@@ -96,6 +97,7 @@ export const timeline = [
   {
     period: 'Jan 2025 — Jul 2025',
     org: 'Independent Consultant',
+    location: 'Toronto, ON',
     role: 'ML / Data Engineering Consultant',
     bullets: [
       'Developed a computer vision prototype for automated quality assessment in agriculture, applying deep learning and low-data techniques.',
@@ -107,6 +109,7 @@ export const timeline = [
   {
     period: 'Nov 2021 — Dec 2024',
     org: 'IBM',
+    location: 'Montreal, QC',
     role: 'Data Scientist / Data Engineer',
     bullets: [
       'Built end-to-end ML pipelines across multiple enterprise client engagements — from data preprocessing and feature engineering through to production deployment.',
@@ -120,6 +123,7 @@ export const timeline = [
   {
     period: 'Aug 2021 — Oct 2021',
     org: 'QualiTEAS Inc.',
+    location: 'St. John\'s, NL',
     role: 'Machine Learning Engineer',
     bullets: [
       'Built and deployed a computer vision model for automated defect detection, reducing manual inspection time by 50%.',
@@ -131,6 +135,7 @@ export const timeline = [
   {
     period: 'Jan 2021 — Jun 2021',
     org: 'McGill University',
+    location: 'Montreal, QC',
     role: 'Data Scientist (Intern)',
     bullets: [
       'Built web scraping pipelines to collect and structure bilingual community data from 70+ sources.',
@@ -142,6 +147,7 @@ export const timeline = [
   {
     period: 'Sep 2019 — May 2021',
     org: 'Lakehead University',
+    location: 'Thunder Bay, ON',
     role: 'Researcher',
     bullets: [
       'Published research on explainable AI for medical image classification in IEEE 2021.',

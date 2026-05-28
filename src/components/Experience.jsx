@@ -75,7 +75,15 @@ function TimelineEntry({ entry, index }) {
       <div className="pb-10">
         <p className="text-xs font-semibold uppercase tracking-[0.15em] text-zinc-400 mb-1">{entry.period}</p>
         <h3 className="text-lg font-bold text-zinc-900 mb-0.5">{entry.role}</h3>
-        <p className="text-sm font-semibold text-zinc-500 mb-3">{entry.org}</p>
+        <div className="flex items-center gap-2 mb-3">
+          <p className="text-sm font-semibold text-zinc-500">{entry.org}</p>
+          {entry.location && (
+            <>
+              <span className="text-zinc-300">·</span>
+              <p className="text-sm text-zinc-400">{entry.location}</p>
+            </>
+          )}
+        </div>
         <ul className="mb-4 flex flex-col gap-2">
           {entry.bullets.map((b) => (
             <li key={b} className="flex items-start gap-2 text-sm text-zinc-600 leading-relaxed max-w-md">
