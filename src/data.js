@@ -16,7 +16,7 @@ export const tools1 = [
   { name: 'PostgreSQL',   icon: 'postgres' },
   { name: 'TensorFlow',   icon: 'tensorflow' },
   { name: 'PyTorch',      icon: 'pytorch' },
-  { name: 'Hugging Face', iconUrl: 'https://cdn.simpleicons.org/huggingface/FFD21E' },
+  { name: 'Hugging Face', iconUrl: 'https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/huggingface.svg' },
   { name: 'LangChain',    iconUrl: 'https://cdn.simpleicons.org/langchain/1C3C3C' },
   { name: 'LlamaIndex',   iconUrl: 'https://cdn.simpleicons.org/llamaindex/6B4FBB' },
   { name: 'OpenAI',       iconUrl: 'https://cdn.simpleicons.org/openai/412991' },
