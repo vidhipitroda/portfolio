@@ -49,7 +49,7 @@ export const projects = [
       'A chatbot that answers questions about LLMs and AI using a knowledge base of 106 documents — research papers, HuggingFace docs, LangChain docs, and ML textbooks — chunked into 6,694 searchable segments with source citations.',
     stack: ['Python', 'LangChain', 'FAISS', 'OpenAI', 'Streamlit'],
     color: 'from-indigo-500 to-violet-600',
-    live: null,
+    live: 'https://ai-tutor-pmi4tgkvye828ocqhz7ybu.streamlit.app',
     github: 'https://github.com/vidhipitroda/AI-tutor',
   },
   {
