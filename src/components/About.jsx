@@ -65,7 +65,7 @@ export default function About() {
           >
             <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-white/50">Output</p>
             <div>
-              <p className="text-6xl leading-none" style={{ fontFamily: "'Bebas Neue', sans-serif", color: 'white' }}>10+</p>
+              <p className="text-6xl leading-none" style={{ fontFamily: "'Bebas Neue', sans-serif", color: 'white' }}>5+</p>
               <p className="text-xs text-white/70 mt-1 font-medium">Projects Shipped</p>
             </div>
           </motion.div>
