@@ -42,7 +42,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex flex-col items-center justify-center px-6 overflow-hidden"
+      className="relative min-h-screen flex flex-col items-center justify-center px-6 pt-20 overflow-hidden"
     >
       <motion.div
         className="flex flex-col items-center text-center max-w-2xl mb-20"
