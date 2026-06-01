@@ -70,7 +70,7 @@ export default function Hero() {
 
         {/* Roles */}
         <p className="mt-5 text-xs font-semibold uppercase tracking-[0.25em]" style={{ color: '#1b4b75' }}>
-          Data &amp; AI Engineer <span className="mx-2">|</span> Python <span className="mx-2">|</span> Machine Learning
+          Data &amp; AI Engineer <span className="mx-2">|</span> AI Agents <span className="mx-2">|</span> LLMs
         </p>
 
         {/* Typewriter pill */}
