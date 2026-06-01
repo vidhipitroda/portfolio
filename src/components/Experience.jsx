@@ -5,7 +5,8 @@ const funFacts = [
   { emoji: '🚴‍♀️', fact: 'Cycles 60km — sometimes just for lunch.', tag: 'Commitment' },
   { emoji: '🎾', fact: 'Left-handed tennis player.', tag: 'Your opponent\'s problem' },
   { emoji: '⛵', fact: 'Learning to sail in 2026 — navigating cloud infrastructure wasn\'t challenging enough.', tag: 'In progress' },
-  { emoji: '🌻', fact: 'Attempting a 10ft sunflower — the vegetables are doing better.', tag: 'Updates pending' }
+  { emoji: '🌻', fact: 'Attempting a 10ft sunflower — the vegetables are doing better.', tag: 'Updates pending' },
+  { emoji: '🍳', fact: 'Loves experimenting with different cuisines — the kitchen is a second lab.', tag: 'Side passion' }
 ];
 
 const CREDLY_URL = 'https://www.credly.com/users/vidh-i-pitroda/badges#credly';
