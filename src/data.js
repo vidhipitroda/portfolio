@@ -63,28 +63,6 @@ export const projects = [
     live: null,
     github: 'https://github.com/vidhipitroda/Medical-report-question-answering',
   },
-  {
-    title: 'Book Recommender',
-    status: 'Built',
-    tagline: 'LLM-powered semantic book search',
-    description:
-      'A book recommendation engine combining semantic vector search, zero-shot classification, and LLM-based sentiment and emotion analysis. Users explore books by natural-language query, genre, and emotional tone via a Gradio dashboard.',
-    stack: ['Python', 'LangChain', 'Vector Search', 'Zero-shot', 'Gradio'],
-    color: 'from-emerald-500 to-teal-500',
-    live: null,
-    github: 'https://github.com/vidhipitroda/LLM-Based-Book-Recommendation-Engine',
-  },
-  {
-    title: 'Stock Predictor',
-    status: 'Built',
-    tagline: 'GenAI-enhanced stock forecasting',
-    description:
-      'Combines time series forecasting (Prophet, Darts) with generative AI to predict stock prices and enrich predictions with market sentiment analysis and real-time economic indicators.',
-    stack: ['Python', 'OpenAI', 'LangChain', 'Prophet', 'PyTorch', 'Plotly'],
-    color: 'from-amber-500 to-orange-500',
-    live: null,
-    github: 'https://github.com/vidhipitroda/Stock-Price-Prediction-with-GenAI-Insights',
-  },
 ];
 
 export const timeline = [
