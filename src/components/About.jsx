@@ -32,7 +32,7 @@ export default function About() {
           >
             <div className="space-y-4 text-[16px] text-zinc-600 leading-relaxed">
               <p>
-                I work across data engineering, machine learning, and cloud. Four years across a few different industries.
+                I work across data engineering, machine learning, and cloud. Five years across a few different industries.
               </p>
               <p>
                 I enjoy the early stage of a problem, when the shape of it isn't clear yet and you have to ask the right questions before writing a single line of code. I also genuinely enjoy the research part: reading papers, digging into how something actually works.
