@@ -67,12 +67,12 @@ export default function About() {
             <p className="text-[10px] font-semibold uppercase tracking-[0.18em] mb-3" style={{ color: '#10b981' }}>Currently</p>
             <div className="flex flex-col gap-2">
               {[
-                { icon: '🟢', text: "Let's build something great together" },
+                { icon: '✦', muted: true, text: "Let's build something great together" },
                 { icon: '🔨', text: 'Building AI-powered data products' },
                 { icon: '📍', text: 'Toronto, Ontario, Canada' },
               ].map((item) => (
                 <div key={item.text} className="flex items-center gap-2">
-                  <span className="text-sm">{item.icon}</span>
+                  <span className={`text-sm ${item.muted ? 'text-zinc-400' : ''}`}>{item.icon}</span>
                   <p className="text-xs font-semibold text-zinc-600">{item.text}</p>
                 </div>
               ))}
