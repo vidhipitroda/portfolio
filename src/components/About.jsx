@@ -30,20 +30,9 @@ export default function About() {
             className="col-span-2 row-span-2 rounded-2xl p-7 flex flex-col justify-between"
             style={{ background: 'linear-gradient(135deg, #fdf8f4 0%, #faeee5 100%)', border: '1px solid rgba(184,92,56,0.12)' }}
           >
-            <div className="space-y-4 text-[16px] text-zinc-600 leading-relaxed">
-              <p>
-                I work across data engineering, machine learning, and cloud. Five years across a few different industries.
-              </p>
-              <p>
-                I enjoy the early stage of a problem, when the shape of it isn't clear yet and you have to ask the right questions before writing a single line of code. I also genuinely enjoy the research part: reading papers, digging into how something actually works.
-              </p>
-              <p>
-                I care about doing things well. Whether that's a pipeline, a model, or a conversation with a stakeholder. I try to find the right level of effort for what's actually needed, not over-engineer for the sake of it.
-              </p>
-              <p>
-                Outside work I grow things in my garden, bake sourdough, cycle, run, play tennis, and read. Enough to keep me away from screens and occasionally humble.
-              </p>
-            </div>
+            <p className="text-[16px] text-zinc-600 leading-relaxed">
+              I’m a Data &amp; AI Engineer who enjoys researching new ideas and turning them into practical products. I’m especially interested in building AI that solves real problems—and in making it reliable enough to use beyond a demo. Outside of work, you’ll often find me gardening, baking sourdough, or out cycling.
+            </p>
           </motion.div>
 
           {/* Stat 1 — Years */}
