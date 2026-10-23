@@ -73,7 +73,7 @@ export const timeline = [
     role: 'Data Engineer, Consultant',
     bullets: [
       'Building enterprise-scale data and AI infrastructure on Azure and Databricks for large financial institutions, handling terabyte-scale datasets across Canada and the U.S.',
-      'Deployed an LLM-powered automation tool that eliminated 100+ hours of manual review effort across engineering workflows.',
+      'Deployed an LLM-powered tool that analyzes Splunk alerts, summarizes each alert with relevant context, and emails the summary to the appropriate team.',
       'Architected a geospatial enrichment platform processing 2M+ records via external APIs with end-to-end CI/CD automation.',
       'Modernising legacy banking workflows by migrating business logic into scalable cloud-native pipelines using LLM-assisted techniques.',
     ],
