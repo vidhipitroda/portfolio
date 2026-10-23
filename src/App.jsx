@@ -4,6 +4,7 @@ import Hero from './components/Hero.jsx';
 import About from './components/About.jsx';
 import Toolkit from './components/Toolkit.jsx';
 import Projects from './components/Projects.jsx';
+import ContentSection from './components/ContentSection.jsx';
 import Experience from './components/Experience.jsx';
 import Education from './components/Education.jsx';
 import Contact from './components/Contact.jsx';
@@ -44,6 +45,18 @@ export default function App() {
           <About />
           <Toolkit />
           <Projects />
+          <ContentSection
+            id="products"
+            label="Products"
+            title="Things I've Made"
+            description="Products and tools will be featured here."
+          />
+          <ContentSection
+            id="blogs"
+            label="Blogs"
+            title="Ideas & Writing"
+            description="Articles and writing will be featured here."
+          />
           <Experience />
           <Education />
           <Contact />
@@ -55,4 +68,3 @@ export default function App() {
     </div>
   );
 }
-
