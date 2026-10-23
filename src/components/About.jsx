@@ -59,27 +59,6 @@ export default function About() {
             </div>
           </motion.div>
 
-          {/* Stat 3 — Tools, wide */}
-          <motion.div {...tile(0.2)}
-            className="col-span-2 rounded-2xl p-5 flex items-center justify-between gap-6"
-            style={{ background: 'rgba(255,255,255,0.8)', border: '1px solid rgba(27,75,117,0.09)', boxShadow: '0 2px 16px rgba(27,75,117,0.06)' }}
-          >
-            <div>
-              <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-zinc-400 mb-1">Stack Depth</p>
-              <p className="text-6xl leading-none" style={{ fontFamily: "'Bebas Neue', sans-serif", color: '#1b4b75' }}>15+</p>
-              <p className="text-xs text-zinc-400 mt-1 font-medium">Technologies Used</p>
-            </div>
-            {/* Mini icon row */}
-            <div className="flex flex-wrap gap-2 max-w-[180px]">
-              {['Python', 'SQL', 'Azure', 'Spark', 'LLMs', 'Docker'].map((t) => (
-                <span key={t} className="text-[10px] px-2 py-0.5 rounded-full font-semibold"
-                  style={{ background: 'rgba(27,75,117,0.07)', color: '#1b4b75' }}>
-                  {t}
-                </span>
-              ))}
-            </div>
-          </motion.div>
-
           {/* Currently tile */}
           <motion.div {...tile(0.25)}
             className="col-span-2 rounded-2xl p-5"
@@ -97,18 +76,6 @@ export default function About() {
                   <p className="text-xs font-semibold text-zinc-600">{item.text}</p>
                 </div>
               ))}
-            </div>
-          </motion.div>
-
-          {/* Cloud tools stat */}
-          <motion.div {...tile(0.3)}
-            className="col-span-2 rounded-2xl p-5 flex items-center gap-5"
-            style={{ background: 'linear-gradient(135deg, #fdf8ed 0%, #f5edcc 100%)', border: '1px solid rgba(184,137,42,0.15)' }}
-          >
-            <p className="text-7xl leading-none shrink-0" style={{ fontFamily: "'Bebas Neue', sans-serif", color: '#b8892a' }}>5+</p>
-            <div>
-              <p className="text-xs font-bold text-zinc-700">Cloud & MLOps Tools</p>
-              <p className="text-[11px] text-zinc-400 mt-0.5">Azure · Databricks · MLflow · Airflow · Docker</p>
             </div>
           </motion.div>
 
