@@ -74,6 +74,7 @@ export const timeline = [
     bullets: [
       'Building enterprise-scale data and AI infrastructure on Azure and Databricks for large financial institutions, handling terabyte-scale datasets across Canada and the U.S.',
       'Deployed an LLM-powered tool that analyzes Splunk alerts, summarizes each alert with relevant context, and emails the summary to the appropriate team.',
+      'Built a daily Python pipeline to extract Canadian and U.S. interest-rate data and generate reports for mainframe ingestion.',
       'Architected a geospatial enrichment platform processing 2M+ records via external APIs with end-to-end CI/CD automation.',
       'Modernising legacy banking workflows by migrating business logic into scalable cloud-native pipelines using LLM-assisted techniques.',
     ],
