@@ -24,7 +24,7 @@ const achievements = [
     icon: '📄',
     title: 'IEEE Publication — Explainable AI for Lung Disease Classification',
     desc: 'Lead author of peer-reviewed IEEE research applying explainable AI techniques to medical imaging — cited over 40 times.',
-    tags: ['35+ Citations', 'IEEE · Peer Reviewed'],
+    tags: ['40+ Citations', 'IEEE · Peer Reviewed'],
     link: 'https://scholar.google.com/citations?user=vvnovLsAAAAJ&hl=en',
   },
   {
